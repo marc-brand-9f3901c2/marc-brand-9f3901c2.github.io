@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>妹妹图片 - 萌娃日常与兄妹合集</title>
+  <meta name="description" content="妹妹图片汇聚萌娃、兄妹日常、妹妹成长记录等图片合集，提供精选推荐、最新更新、分类入口、深度解析与真实评论，适合喜欢萌娃和记录家庭日常的读者浏览。">
+  <meta name="keywords" content="妹妹图片">
+  <style>
+    /* ---------- 全局变量 ---------- */
+    :root {
+      --primary: #f57f9e;
+      --primary-light: #ffe4eb;
+      --primary-dark: #c25b7a;
+      --bg: #fffafb;
+      --surface: #ffffff;
+      --text-primary: #2e2a2b;
+      --text-secondary: #6b5e61;
+      --text-tertiary: #9e8b8f;
+      --border: #f0e2e6;
+      --radius-card: 20px;
+      --radius-btn: 40px;
+      --radius-tag: 12px;
+      --shadow-default: 0 6px 18px rgba(245, 127, 158, 0.08);
+      --shadow-hover: 0 12px 28px rgba(245, 127, 158, 0.18);
+      --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      --line-height-body: 1.7;
+      --max-width: 1320px;
+      --sticky-offset: 130px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: var(--line-height-body);
+      padding-top: var(--sticky-offset);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* ---------- 吸顶容器 ---------- */
+    .sticky-top {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(255, 250, 251, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ---------- 公告条 ---------- */
+    .announce-bar {
+      background: var(--primary-dark);
+      color: #fff;
+      font-size: 0.85rem;
+      padding: 8px 0;
+    }
+
+    .announce-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px 28px;
+    }
+
+    .announce-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .announce-item .badge {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 2px 10px;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 0.75rem;
+      letter-spacing: 0.3px;
+    }
+
+    .announce-brand {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-right: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    /* ---------- 页头 ---------- */
+    .site-header {
+      padding: 14px 0;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px 32px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary-dark);
+      flex-shrink: 0;
+    }
+
+    .logo svg {
+      width: 36px;
+      height: 36px;
+      transition: transform 0.2s ease;
+    }
+
+    .logo:hover svg {
+      transform: rotate(-4deg) scale(1.02);
+    }
+
+    .main-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 22px;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .main-nav a {
+      padding: 6px 0;
+      border-bottom: 2px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .main-nav a:hover {
+      color: var(--primary);
+      border-bottom-color: var(--primary);
+    }
+
+    .header-actions {
+      margin-left: auto;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      background: var(--primary-light);
+      border-radius: var(--radius-btn);
+      padding: 4px 8px 4px 16px;
+      border: 1px solid transparent;
+      transition: border 0.2s;
+    }
+
+    .search-box:focus-within {
+      border-color: var(--primary);
+    }
+
+    .search-box input {
+      border: none;
+      background: transparent;
+      padding: 8px 4px;
+      font-size: 0.85rem;
+      width: 140px;
+      outline: none;
+      color: var(--text-primary);
+    }
+
+    .search-box input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .search-box button {
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      border-radius: var(--radius-btn);
+      padding: 6px 14px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .search-box button:hover {
+      background: var(--primary-dark);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 8px 12px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- 主布局（三栏门户） ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 24px 24px 60px;
+    }
+
+    .portal-grid {
+      display: grid;
+      grid-template-columns: 180px 1fr 260px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左频道索引 */
+    .channel-nav {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 20px 12px;
+      box-shadow: var(--shadow-default);
+      border: 1px solid var(--border);
+    }
+
+    .channel-nav h3 {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-tertiary);
+      padding: 0 8px 12px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 8px;
+    }
+
+    .channel-nav ul {
+      list-style: none;
+    }
+
+    .channel-nav li a {
+      display: block;
+      padding: 8px 12px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      border-radius: 10px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .channel-nav li a:hover {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    /* 主内容区 */
+    .main-content {
+      min-width: 0;
+    }
+
+    /* 右侧辅助栏 */
+    .sidebar {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .sidebar-card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 20px 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-default);
+    }
+
+    .sidebar-card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-primary);
+    }
+
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar-list li {
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      color: var(--text-secondary);
+    }
+
+    .sidebar-list li span:first-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 150px;
+    }
+
+    .sidebar-list li span:last-child {
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    /* ---------- 首屏 ---------- */
+    .hero {
+      background: linear-gradient(135deg, #fff0f5 0%, #ffe4eb 100%);
+      border-radius: 32px;
+      padding: 36px 40px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      flex: 1;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 480px;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-btn);
+      padding: 12px 28px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: var(--shadow-default);
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--primary);
+      color: var(--primary-dark);
+      border-radius: var(--radius-btn);
+      padding: 10px 26px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-light);
+      transform: translateY(-2px);
+    }
+
+    .hero-visual {
+      flex: 0 0 240px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-visual svg {
+      width: 220px;
+      height: auto;
+      filter: drop-shadow(0 8px 20px rgba(245, 127, 158, 0.2));
+    }
+
+    /* ---------- 通用板块样式 ---------- */
+    .section {
+      margin-bottom: 42px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 18px;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h2::before {
+      content: '';
+      display: inline-block;
+      width: 5px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 10px;
+    }
+
+    /* ---------- 精选卡片网格 ---------- */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      box-shadow: var(--shadow-default);
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #f5e6ea;
+    }
+
+    .card-body {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: var(--text-primary);
+    }
+
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+      font-size: 0.7rem;
+      padding: 3px 10px;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+
+    .card-desc {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+
+    .card-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-tertiary);
+      border-top: 1px solid var(--border);
+      padding-top: 10px;
+    }
+
+    /* ---------- 最新更新列表 ---------- */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .update-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+
+    .update-item:hover {
+      background: var(--primary-light);
+    }
+
+    .update-date {
+      font-size: 0.75rem;
+      color: var(--primary-dark);
+      background: var(--primary-light);
+      padding: 4px 10px;
+      border-radius: 30px;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .update-content {
+      flex: 1;
+    }
+
+    .update-content strong {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .update-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: 2px;
+    }
+
+    /* ---------- 分类入口 ---------- */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .category-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 18px 12px;
+      text-align: center;
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      cursor: default;
+    }
+
+    .category-item:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    /* ---------- 深度解析 ---------- */
+    .deep-dive {
+      background: var(--surface);
+      border-radius: var(--radius-card);
+      padding: 28px 30px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-default);
+    }
+
+    .deep-dive h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 24px 0 12px;
+      color: var(--primary-dark);
+    }
+
+    .deep-dive h3:first-of-type {
+      margin-top: 0;
+    }
+
+    .deep-dive p {
+      margin-bottom: 16px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .deep-dive ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .deep-dive li {
+      margin-bottom: 6px;
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    details {
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 0 18px;
+      transition: background 0.2s;
+    }
+
+    details[open] {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    summary {
+      padding: 16px 0;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-primary);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      content: '+';
+      font-size: 1.3rem;
+      color: var(--primary);
+      font-weight: 400;
+      transition: transform 0.2s;
+    }
+
+    details[open] summary::after {
+      content: '−';
+    }
+
+    details p {
+      padding: 0 0 18px;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* ---------- 评论 ---------- */
+    .comments-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .comment {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .comment .nickname {
+      font-weight: 600;
+      color: var(--primary-dark);
+      margin-bottom: 4px;
+      font-size: 0.8rem;
+    }
+
+    /* ---------- 相关资讯 ---------- */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .news-item {
+      display: flex;
+      gap: 16px;
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 16px;
+      align-items: flex-start;
+    }
+
+    .news-img {
+      flex: 0 0 100px;
+      width: 100px;
+      height: 75px;
+      border-radius: 12px;
+      object-fit: cover;
+      background: #f5e6ea;
+    }
+
+    .news-content {
+      flex: 1;
+    }
+
+    .news-content h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .news-meta {
+      font-size: 0.75rem;
+      color: var(--text-tertiary);
+      margin-bottom: 6px;
+    }
+
+    .news-content p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- 相关推荐标签 ---------- */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .rec-tag {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      cursor: default;
+    }
+
+    .rec-tag:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary-dark);
+    }
+
+    /* ---------- 补充板块 ---------- */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-left: 2px solid var(--primary-light);
+      padding-left: 22px;
+      margin-left: 10px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 22px 12px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -28px;
+      top: 6px;
+      width: 12px;
+      height: 12px;
+      background: var(--primary);
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+
+    .timeline-date {
+      font-size: 0.75rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .timeline-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- 页脚 ---------- */
+    .site-footer {
+      background: #2e2a2b;
+      color: #d9cfd1;
+      padding: 44px 24px 28px;
+      border-radius: 36px 36px 0 0;
+      margin-top: 30px;
+    }
+
+    .footer-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+
+    .footer-brand .logo {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #b8a9ac;
+    }
+
+    .footer-group h4 {
+      font-size: 0.9rem;
+      color: #fff;
+      margin-bottom: 14px;
+      font-weight: 600;
+    }
+
+    .footer-group ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-group li a {
+      font-size: 0.8rem;
+      color: #b8a9ac;
+      transition: color 0.2s;
+    }
+
+    .footer-group li a:hover {
+      color: var(--primary);
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 32px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #4a3e41;
+      font-size: 0.75rem;
+      color: #8f7e81;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ---------- 回到顶部 ---------- */
+    .back-to-top {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      box-shadow: var(--shadow-hover);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 200;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-dark);
+      transform: translateY(-3px);
+    }
+
+    /* ---------- 响应式 ---------- */
+    @media (max-width: 1100px) {
+      .portal-grid {
+        grid-template-columns: 1fr 260px;
+      }
+      .channel-nav {
+        display: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .portal-grid {
+        grid-template-columns: 1fr;
+      }
+      .sidebar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .sidebar-card {
+        flex: 1 1 220px;
+      }
+      .hero {
+        flex-direction: column;
+        padding: 28px 24px;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero-desc {
+        max-width: 100%;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-visual {
+        flex: 0 0 auto;
+      }
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .comments-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr 1fr;
+      }
+      .menu-toggle {
+        display: block;
+      }
+      .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+      }
+      .main-nav.open {
+        display: flex;
+      }
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --sticky-offset: 150px;
+      }
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+      }
+      .news-item {
+        flex-direction: column;
+      }
+      .news-img {
+        width: 100%;
+        height: 140px;
+      }
+      .footer-inner {
+        grid-template-columns: 1fr;
+      }
+      .announce-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+      .header-actions {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .search-box {
+        flex: 1;
+      }
+      .search-box input {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* 滚动偏移 */
+    [id] {
+      scroll-margin-top: var(--sticky-offset);
+    }
+
+    /* 无结果提示 */
+    .no-results {
+      padding: 16px;
+      background: var(--primary-light);
+      border-radius: 12px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 + 页头 -->
+<div class="sticky-top">
+  <div class="announce-bar">
+    <div class="announce-inner">
+      <span class="announce-brand">妹妹图片</span>
+      <div class="announce-item">
+        <span class="badge">11月7日</span>
+        <span>新增「小橙子妹妹·秋日野餐」图集 12 张</span>
+      </div>
+      <div class="announce-item">
+        <span class="badge">11月6日</span>
+        <span>「兄妹日常·抢玩具名场面」组图进入热榜</span>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo" aria-label="妹妹图片首页">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="18" cy="18" r="16" fill="#ffe4eb" stroke="#f57f9e" stroke-width="2"/>
+          <circle cx="13" cy="14" r="2.5" fill="#c25b7a"/>
+          <circle cx="23" cy="14" r="2.5" fill="#c25b7a"/>
+          <path d="M12 22 Q18 28 24 22" stroke="#c25b7a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+          <circle cx="9" cy="19" r="2" fill="#f57f9e" opacity="0.5"/>
+          <circle cx="27" cy="19" r="2" fill="#f57f9e" opacity="0.5"/>
+        </svg>
+        妹妹图片
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="打开导航菜单" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <a href="#overview">领域概览</a>
+        <a href="#featured">精选推荐</a>
+        <a href="#latest">最新更新</a>
+        <a href="#categories">分类入口</a>
+        <a href="#deepdive">深度解析</a>
+        <a href="#guide">体验指南</a>
+        <a href="#faq">常见问题</a>
+        <a href="#comments">用户评论</a>
+        <a href="#news">相关资讯</a>
+        <a href="#recommend">相关推荐</a>
+        <a href="#timeline">更新线</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="search" id="searchInput" placeholder="搜索条目..." aria-label="搜索页面内容">
+          <button id="searchBtn" type="button">查找</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<!-- 主容器 -->
+<div class="container">
+  <div class="portal-grid">
+    <!-- 左频道索引 -->
+    <aside class="channel-nav" aria-label="频道索引">
+      <h3>内容频道</h3>
+      <ul>
+        <li><a href="#overview">萌娃图集</a></li>
+        <li><a href="#featured">兄妹日常</a></li>
+        <li><a href="#latest">成长记录</a></li>
+        <li><a href="#categories">节日主题</a></li>
+        <li><a href="#deepdive">拍摄技巧</a></li>
+        <li><a href="#comments">真实评论</a></li>
+        <li><a href="#news">近期动态</a></li>
+        <li><a href="#timeline">更新线</a></li>
+      </ul>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="main-content">
+      <!-- 首屏 -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>妹妹图片</h1>
+          <p class="hero-desc">汇聚萌娃、兄妹互动、妹妹成长记录与节日主题图集，每天更新真实家庭日常的瞬间。</p>
+          <div class="hero-actions">
+            <a href="#featured" class="btn-primary">浏览精选</a>
+            <a href="#latest" class="btn-outline">查看更新</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 220 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="30" width="180" height="120" rx="20" fill="#ffe4eb" stroke="#f57f9e" stroke-width="2"/>
+            <circle cx="80" cy="80" r="22" fill="#fff" stroke="#c25b7a" stroke-width="2"/>
+            <circle cx="140" cy="80" r="22" fill="#fff" stroke="#c25b7a" stroke-width="2"/>
+            <circle cx="74" cy="76" r="4" fill="#c25b7a"/>
+            <circle cx="86" cy="76" r="4" fill="#c25b7a"/>
+            <path d="M72 90 Q80 98 88 90" stroke="#c25b7a" stroke-width="2" fill="none"/>
+            <circle cx="134" cy="76" r="4" fill="#c25b7a"/>
+            <circle cx="146" cy="76" r="4" fill="#c25b7a"/>
+            <path d="M132 90 Q140 98 148 90" stroke="#c25b7a" stroke-width="2" fill="none"/>
+            <path d="M100 120 Q120 140 140 120" stroke="#f57f9e" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="40" cy="120" r="6" fill="#f57f9e" opacity="0.4"/>
+            <circle cx="180" cy="120" r="6" fill="#f57f9e" opacity="0.4"/>
+          </svg>
+        </div>
+      </section>
+
+      <!-- 无结果提示 -->
+      <div id="noResults" class="no-results" role="status">没有找到匹配的条目，试试「兄妹」「野餐」或「秋日」。</div>
+
+      <!-- 1. 主题领域概览 -->
+      <section id="overview" class="section">
+        <h2>萌娃图片内容方向</h2>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px;">“妹妹图片”涵盖的范围比想象中宽。按场景分，有家居日常、户外野餐、节日装扮、兄妹互动；按风格分，有自然抓拍、摆拍写真、表情包特写。2026年11月前后，家庭记录的素材量明显增加，尤其是2—5岁妹妹与哥哥姐姐的混龄互动。以下三个方向近期关注度较高：</p>
+        <ul style="padding-left: 20px; color: var(--text-secondary); font-size: 0.92rem; display: flex; flex-direction: column; gap: 8px;">
+          <li><strong>秋日外景系列</strong>——落叶、毛衣、野餐垫的组合，11月第一周新增了12组。</li>
+          <li><strong>兄妹抢玩具抓拍</strong>——表情生动，成为表情包素材的主要来源。</li>
+          <li><strong>妹妹第一次扎辫子</strong>——成长节点类内容，评论互动量是平常的1.8倍。</li>
+        </ul>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section id="featured" class="section">
+        <h2>本周精选图集</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img src="https://picsum.photos/seed/meimei-picnic/400/300" alt="小橙子妹妹在秋日野餐垫上吃橘子" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">小橙子妹妹·秋日野餐</h3>
+              <div class="card-tags"><span class="tag">外景</span><span class="tag">野餐</span><span class="tag">秋日</span></div>
+              <p class="card-desc">11月7日拍摄于城市公园，妹妹第一次自己剥橘子，全程抓拍12张，嘴角沾到果汁的瞬间被记录下来。</p>
+              <div class="card-meta"><span>热度 2.4k</span><span>11月7日</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/meimei-brother/400/300" alt="哥哥和妹妹抢玩具车时妹妹皱眉的表情" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">兄妹抢玩具·名场面</h3>
+              <div class="card-tags"><span class="tag">兄妹</span><span class="tag">抓拍</span><span class="tag">表情</span></div>
+              <p class="card-desc">哥哥拿走妹妹手里的红色小汽车，妹妹先是愣了两秒，然后皱眉、瘪嘴、伸手去够，三连拍完整记录。</p>
+              <div class="card-meta"><span>热度 3.1k</span><span>11月6日</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/meimei-braid/400/300" alt="妹妹第一次扎双马尾对镜笑" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">妹妹第一次扎双马尾</h3>
+              <div class="card-tags"><span class="tag">成长记录</span><span class="tag">发型</span><span class="tag">室内</span></div>
+              <p class="card-desc">妈妈花15分钟编好的双马尾，妹妹对着镜子笑了半分钟，最后一张是转头时辫子飞起来的瞬间。</p>
+              <div class="card-meta"><span>热度 1.9k</span><span>11月5日</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="https://picsum.photos/seed/meimei-halloween/400/300" alt="妹妹穿南瓜裙在客厅讨糖" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <h3 class="card-title">万圣节南瓜裙合集</h3>
+              <div class="card-tags"><span class="tag">节日主题</span><span class="tag">装扮</span><span class="tag">室内</span></div>
+              <p class="card-desc">10月31日到11月1日的记录，妹妹穿着南瓜裙在家里挨个房间“讨糖”，最后在沙发边睡着。</p>
+              <div class="card-meta"><span>热度 2.7k</span><span>11月2日</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section id="latest" class="section">
+        <h2>最近更新条目</h2>
+        <div class="update-list">
+          <div class="update-item"><span class="update-date">11月8日</span><div class="update-content"><strong>「妹妹的早餐时间」图集</strong><p>新增6张，记录妹妹自己拿勺子吃燕麦粥，围兜上滴了三滴。</p></div></div>
+          <div class="update-item"><span class="update-date">11月7日</span><div class="update-content"><strong>「小橙子妹妹·秋日野餐」</strong><p>12张外景，从出门到回家，橘子皮留在野餐垫上。</p></div></div>
+          <div class="update-item"><span class="update-date">11月6日</span><div class="update-content"><strong>「兄妹抢玩具·名场面」</strong><p>三连拍加一张后续，哥哥把车还回去时妹妹已经不哭了。</p></div></div>
+          <div class="update-item"><span class="update-date">11月5日</span><div class="update-content"><strong>「妹妹第一次扎双马尾」</strong><p>发型过程4张，对镜笑3张，转头飞辫1张。</p></div></div>
+          <div class="update-item"><span class="update-date">11月4日</span><div class="update-content"><strong>「哥哥教妹妹拼积木」</strong><p>9张连续记录，积木塌了两次，妹妹递错三块。</p></div></div>
+          <div class="update-item"><span class="update-date">11月3日</span><div class="update-content"><strong>「妹妹踩落叶」</strong><p>公园小径上踩了七个来回，裤脚沾了碎叶。</p></div></div>
+          <div class="update-item"><span class="update-date">11月2日</span><div class="update-content"><strong>「万圣节南瓜裙合集」</strong><p>补发最后一张睡在沙发上的照片。</p></div></div>
+          <div class="update-item"><span class="update-date">11月1日</span><div class="update-content"><strong>「妹妹第一次自己穿鞋」</strong><p>左右穿反，但成功扣上魔术贴，共5张。</p></div></div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section id="categories" class="section">
+        <h2>按类别找图</h2>
+        <div class="category-grid">
+          <div class="category-item">兄妹日常</div>
+          <div class="category-item">秋日外景</div>
+          <div class="category-item">节日装扮</div>
+          <div class="category-item">成长节点</div>
+          <div class="category-item">表情抓拍</div>
+          <div class="category-item">室内家居</div>
+          <div class="category-item">亲子互动</div>
+          <div class="category-item">旅行记录</div>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section id="deepdive" class="section">
+        <h2>妹妹图片的拍摄与判断</h2>
+        <div class="deep-dive">
+          <p>同样是记录妹妹，为什么有的图集看起来自然、有的像摆拍？差别往往不在设备，而在拍摄时机和判断标准。下面从三个角度拆解。</p>
+          <h3>抓拍窗口：动作开始后的0.8—1.5秒</h3>
+          <p>妹妹剥橘子、抢玩具、踩落叶，这些动作有一个共同点——起始帧之后大约一秒，表情最松弛。太早按快门，手还没伸出去；太晚，表情已经收回。11月7日那组野餐图，12张里最出圈的一张是妹妹把橘子瓣塞进嘴里的瞬间，拍摄者连拍了5张，只有第3张嘴角是上扬的。这个窗口期和相机参数无关，靠的是对下一帧的预判。</p>
+          <h3>兄妹同框：谁占据画面主体</h3>
+          <p>哥哥和妹妹同框时，画面重心容易偏向动作发起方。抢玩具那组图里，哥哥拿车的手在画面左侧，妹妹的皱眉在右侧，但视觉落点往往先到妹妹脸上——因为表情张力更强。如果要突出互动，把两人放在同一水平线上；如果要突出妹妹反应，就让哥哥只露半只手。两种处理没有对错，取决于这组图想留下什么。</p>
+          <ul>
+            <li><strong>已公开事实</strong>：11月6日发布的抢玩具三连拍，原图未经裁切，保留了哥哥的侧身。</li>
+            <li><strong>拍摄者说法</strong>：拍摄者（妈妈）在评论里回复“先拍了哥哥再转过去拍妹妹，所以第一张有点歪”。</li>
+            <li><strong>读者反馈</strong>：目前该图集下12条评论，有4条提到“妹妹皱眉太真实”。</li>
+          </ul>
+          <h3>成长节点类内容的衡量标准</h3>
+          <p>妹妹第一次扎辫子、第一次自己穿鞋、第一次完整叫出“哥哥”——这类内容的价值不在画面多精致，而在“第一次”是否可核对。11月5日双马尾图集附带了时间戳：15:22开始编发，15:37拍完对镜笑。15分钟里妹妹没有扯掉皮筋，这个细节比“可爱”更有记录意义。</p>
+          <p>判断一组成长记录是否值得保存，可以看三个硬指标：时间是否具体到分钟、动作是否完整闭环、前后是否有对比图。三项缺一项，就只是单张照片，不成记录。</p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section id="guide" class="section">
+        <h2>怎么浏览这些图集</h2>
+        <div style="background: var(--surface); border-radius: var(--radius-card); padding: 24px; border: 1px solid var(--border);">
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 16px;">图集按时间顺序排列，但消费顺序可以按兴趣调整。三个建议：</p>
+          <ol style="padding-left: 20px; color: var(--text-secondary); font-size: 0.92rem; display: flex; flex-direction: column; gap: 10px;">
+            <li><strong>先看更新日期</strong>——越新的图集评论互动越多，能看到其他读者的实时反应。</li>
+            <li><strong>按分类找场景</strong>——外景类适合看构图，室内类适合看表情细节。</li>
+            <li><strong>对比同主题不同日期</strong>——比如10月31日的南瓜裙和11月2日的补图，能看到妹妹状态的变化。</li>
+          </ol>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; margin-top: 14px;">想判断一组图值不值得花时间，看两个地方：拍摄者有没有写具体时间，评论区有没有人提到画面里的细节。两个都有，基本不会差。</p>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section id="faq" class="section">
+        <h2>常见问题</h2>
+        <div class="faq-list">
+          <details>
+            <summary>妹妹图片一般多大年龄段的比较多？</summary>
+            <p>目前站内图集集中在2—5岁，其中3岁前后的素材最密集。11月新增的12组里，有7组标注了妹妹年龄为2岁8个月到4岁1个月。</p>
+          </details>
+          <details>
+            <summary>兄妹日常类图集通常拍什么内容？</summary>
+            <p>常见的有抢玩具、一起拼积木、哥哥教妹妹穿鞋、分零食。11月6日那组抢玩具的数据最好，三连拍加后续总共四张，评论里讨论最多的是妹妹皱眉的表情。</p>
+          </details>
+          <details>
+            <summary>秋日外景图一般选什么时间段拍？</summary>
+            <p>下午3点到4点半之间光线最柔和。11月7日小橙子妹妹的野餐图拍摄时间是15:10到16:05，落叶在斜光下颜色更暖。</p>
+          </details>
+          <details>
+            <summary>为什么有的图集只有几张，有的十几张？</summary>
+            <p>取决于动作是否连续。第一次扎辫子只拍了8张，因为过程就15分钟；野餐图拍了12张，因为从出门到回家有完整的场景变化。数量跟着事件长度走。</p>
+          </details>
+          <details>
+            <summary>妹妹第一次叫哥哥这种瞬间怎么拍到的？</summary>
+            <p>多数是手机随手录视频再截图。11月4日积木图集里有一张妹妹递错积木时张嘴的瞬间，拍摄者说“刚好在录延时，截了第47帧”。</p>
+          </details>
+          <details>
+            <summary>节日装扮类图集通常提前多久拍？</summary>
+            <p>万圣节南瓜裙是10月31日当天拍的，圣诞节装扮一般提前一周试穿。11月2日补发的南瓜裙睡照是节日结束后第二天拍的，场景已经拆了一半。</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section id="comments" class="section">
+        <h2>读者留言</h2>
+        <div class="comments-grid">
+          <div class="comment"><div class="nickname">橘子汽水</div>小橙子妹妹嘴角那滴果汁太真实了，我家那个吃橘子也这样，围兜根本挡不住。</div>
+          <div class="comment"><div class="nickname">安安妈妈</div>抢玩具第三张妹妹皱眉的幅度刚刚好，再晚半秒就哭了。</div>
+          <div class="comment"><div class="nickname">老张看娃</div>双马尾那组15分钟编完，我给我闺女编了半小时她还扯掉了。</div>
+          <div class="comment"><div class="nickname">蹦蹦跳跳</div>南瓜裙讨糖最后睡沙发那张，嘴角还有糖渣，笑死。</div>
+          <div class="comment"><div class="nickname">小鹿乱撞</div>踩落叶那组裤脚沾的碎叶子，跟我家楼下的银杏一模一样。</div>
+          <div class="comment"><div class="nickname">周末不加班</div>页面排版看着挺舒服，分类点进去基本能找到想看的类型。</div>
+          <div class="comment"><div class="nickname">果冻布丁</div>哥哥教拼积木那组，妹妹递错三块积木的节奏太真实了，我家也是乱递。</div>
+          <div class="comment"><div class="nickname">一颗奶糖</div>第一次自己穿鞋左右反了还扣上魔术贴，这个细节我给满分。</div>
+          <div class="comment"><div class="nickname">大脸猫</div>秋日野餐那组如果有全身照就更好了，现在基本都是半身。</div>
+          <div class="comment"><div class="nickname">慢慢来</div>南瓜裙补的那张睡照，沙发靠垫的花纹和10月31日那张是同一个，时间线对得上。</div>
+          <div class="comment"><div class="nickname">阿布的日常</div>感觉最近外景图变多了，室内图比例下来了一点。</div>
+          <div class="comment"><div class="nickname">小笼包</div>搜索框试了“积木”，能直接筛出条目，这个挺方便。</div>
+          <div class="comment"><div class="nickname">月亮不睡</div>妹妹第一次扎双马尾转头飞辫那张，我存了当头像。</div>
+          <div class="comment"><div class="nickname">豆豆龙</div>兄妹抢玩具的后续图里哥哥把车还回去，妹妹已经不哭了，但脸上还有泪印，这个细节好。</div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section id="news" class="section">
+        <h2>近期动态</h2>
+        <div class="news-list">
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-picnic/600/400" alt="秋日野餐图集拍摄现场" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>小橙子妹妹野餐图集12张全部放出</h4>
+              <div class="news-meta">2026-11-07 · 图集更新</div>
+              <p>拍摄时间15:10—16:05，地点城市公园北门银杏林。新增6张剥橘子过程，其中3张嘴角沾果汁。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-toy/600/400" alt="兄妹抢玩具三连拍截图" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>兄妹抢玩具三连拍进入热榜前三</h4>
+              <div class="news-meta">2026-11-06 · 热度变化</div>
+              <p>发布18小时内热度从0跳到2.9k，评论里4条提到妹妹表情。拍摄者回复称第一张裁掉了哥哥半只胳膊。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-braid/600/400" alt="妹妹双马尾对镜笑" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>双马尾图集附带时间戳，15分钟完整记录</h4>
+              <div class="news-meta">2026-11-05 · 细节补充</div>
+              <p>15:22开始编发，15:37拍完对镜笑。期间妹妹没有扯掉皮筋，只在第8分钟摸了摸头顶。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-halloween/600/400" alt="妹妹南瓜裙讨糖" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>万圣节南瓜裙补发睡照，沙发靠垫成线索</h4>
+              <div class="news-meta">2026-11-02 · 图集补发</div>
+              <p>补发的第7张照片里，沙发靠垫花纹与10月31日首图一致，确认是同一场景。妹妹嘴角有糖渣。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-shoes/600/400" alt="妹妹自己穿反鞋子" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>第一次自己穿鞋5张连拍，左右反了但扣上魔术贴</h4>
+              <div class="news-meta">2026-11-01 · 成长节点</div>
+              <p>拍摄者记录：右脚穿进左鞋，折腾40秒后成功粘上魔术贴，全程没有大人帮忙。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <img src="https://picsum.photos/seed/news-leaves/600/400" alt="妹妹踩公园落叶" width="600" height="400" loading="lazy" class="news-img">
+            <div class="news-content">
+              <h4>踩落叶图集共7张，裤脚沾碎叶成评论焦点</h4>
+              <div class="news-meta">2026-11-03 · 外景记录</div>
+              <p>拍摄于公园小径，妹妹来回踩了七个来回。评论里3条问裤子是什么牌子，2条讨论银杏叶颜色。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section id="recommend" class="section">
+        <h2>你可能也感兴趣</h2>
+        <div class="rec-tags">
+          <span class="rec-tag">妹妹第一次叫哥哥</span>
+          <span class="rec-tag">哥哥教妹妹拼积木</span>
+          <span class="rec-tag">妹妹踩落叶</span>
+          <span class="rec-tag">南瓜裙讨糖</span>
+          <span class="rec-tag">双马尾飞辫瞬间</span>
+          <span class="rec-tag">早餐燕麦粥</span>
+          <span class="rec-tag">妹妹自己穿鞋</span>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：更新线 -->
+      <section id="timeline" class="section">
+        <h2>近期更新线</h2>
+        <div class="timeline">
+          <div class="timeline-item"><div class="timeline-date">11月8日</div><div class="timeline-text">「妹妹的早餐时间」新增6张，围兜上滴了三滴燕麦粥。</div></div>
+          <div class="timeline-item"><div class="timeline-date">11月7日</div><div class="timeline-text">小橙子妹妹秋日野餐12张全部放出，橘子皮留在了野餐垫上。</div></div>
+          <div class="timeline-item"><div class="timeline-date">11月6日</div><div class="timeline-text">兄妹抢玩具三连拍发布，评论4条提到妹妹皱眉。</div></div>
+          <div class="timeline-item"><div class="timeline-date">11月5日</div><div class="timeline-text">双马尾图集附带15分钟时间戳，对镜笑3张。</div></div>
+          <div class="timeline-item"><div class="timeline-date">11月4日</div><div class="timeline-text">哥哥教妹妹拼积木9张，积木塌了两次。</div></div>
+          <div class="timeline-item"><div class="timeline-date">11月3日</div><div class="timeline-text">踩落叶7张，裤脚沾碎叶。</div></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 右侧辅助栏 -->
+    <aside class="sidebar" aria-label="辅助信息">
+      <div class="sidebar-card">
+        <h3>热榜条目</h3>
+        <ul class="sidebar-list">
+          <li><span>兄妹抢玩具·名场面</span><span>3.1k</span></li>
+          <li><span>万圣节南瓜裙合集</span><span>2.7k</span></li>
+          <li><span>小橙子妹妹·秋日野餐</span><span>2.4k</span></li>
+          <li><span>妹妹第一次扎双马尾</span><span>1.9k</span></li>
+          <li><span>哥哥教妹妹拼积木</span><span>1.6k</span></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>最近更新</h3>
+        <ul class="sidebar-list">
+          <li><span>妹妹的早餐时间</span><span>11月8日</span></li>
+          <li><span>小橙子妹妹·秋日野餐</span><span>11月7日</span></li>
+          <li><span>兄妹抢玩具·名场面</span><span>11月6日</span></li>
+          <li><span>双马尾飞辫瞬间</span><span>11月5日</span></li>
+          <li><span>哥哥教妹妹拼积木</span><span>11月4日</span></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>互动</h3>
+        <ul class="sidebar-list" style="gap: 10px;">
+          <li><span>投稿你的妹妹图片</span><span>↗</span></li>
+          <li><span>上传兄妹日常</span><span>↗</span></li>
+          <li><span>参与表情包比赛</span><span>↗</span></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- 页脚 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo" style="color: #fff; margin-bottom: 10px;">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width: 28px; height: 28px;">
+          <circle cx="18" cy="18" r="16" fill="#ffe4eb" stroke="#f57f9e" stroke-width="2"/>
+          <circle cx="13" cy="14" r="2.5" fill="#c25b7a"/>
+          <circle cx="23" cy="14" r="2.5" fill="#c25b7a"/>
+          <path d="M12 22 Q18 28 24 22" stroke="#c25b7a" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        </svg>
+        妹妹图片
+      </div>
+      <p>覆盖2026年10月31日至11月8日的图集，以家居日常、外景野餐、节日装扮、兄妹互动为主，每日更新1—2组。</p>
+    </div>
+    <div class="footer-group">
+      <h4>内容分类</h4>
+      <ul>
+        <li><a href="#overview">萌娃图集</a></li>
+        <li><a href="#featured">兄妹日常</a></li>
+        <li><a href="#latest">成长记录</a></li>
+        <li><a href="#categories">节日主题</a></li>
+      </ul>
+    </div>
+    <div class="footer-group">
+      <h4>互动</h4>
+      <ul>
+        <li><a href="#comments">读者留言</a></li>
+        <li><a href="#news">近期动态</a></li>
+        <li><a href="#timeline">更新线</a></li>
+        <li><a href="#recommend">相关推荐</a></li>
+      </ul>
+    </div>
+    <div class="footer-group">
+      <h4>关于</h4>
+      <ul>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#deepdive">拍摄解析</a></li>
+        <li><a href="#guide">浏览指南</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 妹妹图片 · 内容聚合示例</span>
+    <span>更新于 2026年11月8日</span>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<!-- 内联脚本 -->
+<script>
+  (function() {
+    // 移动端菜单
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!expanded));
+        mainNav.classList.toggle('open');
+      });
+      // 点击导航后收起
+      mainNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mainNav.classList.remove('open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // 回到顶部
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 400) {
+        backToTop.style.display = 'flex';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+    backToTop.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 搜索筛选
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const noResults = document.getElementById('noResults');
+
+    function performSearch() {
+      const query = searchInput.value.trim().toLowerCase();
+      const cards = document.querySelectorAll('.card');
+      const updateItems = document.querySelectorAll('.update-item');
+      const newsItems = document.querySelectorAll('.news-item');
+      let visibleCount = 0;
+
+      // 重置
+      cards.forEach(c => c.style.display = '');
+      updateItems.forEach(u => u.style.display = '');
+      newsItems.forEach(n => n.style.display = '');
+
+      if (query === '') {
+        noResults.style.display = 'none';
+        return;
+      }
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(query)) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      updateItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+          item.style.display = '';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      newsItems.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(query)) {
+          item.style.display = '';
+          visibleCount++;
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResults.style.display = 'block';
+      } else {
+        noResults.style.display = 'none';
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('input', performSearch);
+    searchInput.addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        performSearch();
+      }
+    });
+
+    // Esc 关闭移动端菜单
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mainNav && mainNav.classList.contains('open')) {
+        mainNav.classList.remove('open');
+        if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "妹妹图片",
+  "description": "妹妹图片汇聚萌娃、兄妹日常、妹妹成长记录等图片合集，提供精选推荐、最新更新、分类入口、深度解析与真实评论，适合喜欢萌娃和记录家庭日常的读者浏览。",
+  "inLanguage": "zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "妹妹图片一般多大年龄段的比较多？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "目前站内图集集中在2—5岁，其中3岁前后的素材最密集。11月新增的12组里，有7组标注了妹妹年龄为2岁8个月到4岁1个月。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "兄妹日常类图集通常拍什么内容？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "常见的有抢玩具、一起拼积木、哥哥教妹妹穿鞋、分零食。11月6日那组抢玩具的数据最好，三连拍加后续总共四张，评论里讨论最多的是妹妹皱眉的表情。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "秋日外景图一般选什么时间段拍？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "下午3点到4点半之间光线最柔和。11月7日小橙子妹妹的野餐图拍摄时间是15:10到16:05，落叶在斜光下颜色更暖。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "为什么有的图集只有几张，有的十几张？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "取决于动作是否连续。第一次扎辫子只拍了8张，因为过程就15分钟；野餐图拍了12张，因为从出门到回家有完整的场景变化。数量跟着事件长度走。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "妹妹第一次叫哥哥这种瞬间怎么拍到的？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "多数是手机随手录视频再截图。11月4日积木图集里有一张妹妹递错积木时张嘴的瞬间，拍摄者说“刚好在录延时，截了第47帧”。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "节日装扮类图集通常提前多久拍？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "万圣节南瓜裙是10月31日当天拍的，圣诞节装扮一般提前一周试穿。11月2日补发的南瓜裙睡照是节日结束后第二天拍的，场景已经拆了一半。"
+      }
+    }
+  ]
+}
+</script>
+</body>
+              </html>
