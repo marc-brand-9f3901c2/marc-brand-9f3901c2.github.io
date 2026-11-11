@@ -1,0 +1,1663 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三级电视剧AI修复版康熙艳谭全集 - 修复剧集聚合与画质解析</title>
+<meta name="description" content="三级电视剧AI修复版康熙艳谭全集内容聚合，涵盖AI修复画质对比、分集修复进度、繁体字幕校对与观看顺序。适合关注老剧修复与版本考据的观众查阅。">
+<meta name="keywords" content="三级电视剧AI修复版康熙艳谭全集">
+<style>
+:root{
+  --primary:#8b5a2b;
+  --primary-light:#c49a6c;
+  --primary-dark:#5c3a17;
+  --bg:#f7f3ee;
+  --surface:#ffffff;
+  --text:#2b2118;
+  --text-secondary:#6b5d4f;
+  --text-muted:#9a8b7a;
+  --border:#e3d9cc;
+  --radius-card:10px;
+  --radius-btn:6px;
+  --radius-tag:4px;
+  --radius-banner:12px;
+  --shadow-default:0 1px 3px rgba(43,33,24,.08);
+  --shadow-hover:0 4px 12px rgba(43,33,24,.14);
+  --font-main:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  --announce-h:36px;
+  --header-h:60px;
+  --sticky-offset:calc(var(--announce-h) + var(--header-h) + 8px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--sticky-offset)}
+body{
+  font-family:var(--font-main);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  font-size:15px;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+img{display:block;max-width:100%}
+button{font-family:inherit;cursor:pointer}
+
+/* 吸顶公告条 */
+.announce-bar{
+  position:sticky;top:0;z-index:100;
+  height:var(--announce-h);
+  background:var(--primary-dark);
+  color:#f5e6d3;
+  display:flex;align-items:center;
+  font-size:13px;
+  overflow:hidden;
+}
+.announce-bar .announce-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  display:flex;align-items:center;gap:16px;width:100%;
+  white-space:nowrap;overflow:hidden;
+}
+.announce-bar strong{color:#f5e6d3;font-weight:600}
+.announce-bar .dot{width:4px;height:4px;border-radius:50%;background:#f5e6d3;flex-shrink:0}
+.announce-bar .announce-scroll{
+  display:flex;gap:28px;overflow:hidden;
+  animation:scrollAnnounce 28s linear infinite;
+}
+@keyframes scrollAnnounce{
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-50%)}
+}
+.announce-bar .announce-item{display:inline-flex;align-items:center;gap:8px;flex-shrink:0}
+.announce-bar .announce-item time{color:#d4b896;font-size:12px}
+
+/* 吸顶页头 */
+.site-header{
+  position:sticky;top:var(--announce-h);z-index:99;
+  height:var(--header-h);
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  height:100%;display:flex;align-items:center;gap:24px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{width:34px;height:34px}
+.brand-text{font-size:17px;font-weight:700;color:var(--primary-dark);letter-spacing:.5px;white-space:nowrap}
+.main-nav{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.main-nav::-webkit-scrollbar{display:none}
+.main-nav a{
+  padding:6px 12px;border-radius:var(--radius-btn);
+  font-size:14px;color:var(--text-secondary);white-space:nowrap;
+  transition:background .2s,color .2s;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--bg);color:var(--primary-dark)}
+.main-nav a.active{background:var(--primary);color:#fff}
+.header-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.search-box{display:flex;align-items:center;border:1px solid var(--border);border-radius:var(--radius-btn);overflow:hidden;background:var(--surface)}
+.search-box input{
+  border:none;outline:none;padding:6px 10px;font-size:13px;
+  width:150px;background:transparent;color:var(--text);
+}
+.search-box input::placeholder{color:var(--text-muted)}
+.search-box button{
+  border:none;background:var(--primary);color:#fff;
+  padding:6px 12px;font-size:13px;transition:background .2s;
+}
+.search-box button:hover{background:var(--primary-dark)}
+.hamburger{
+  display:none;background:none;border:1px solid var(--border);
+  border-radius:var(--radius-btn);width:36px;height:36px;
+  align-items:center;justify-content:center;font-size:18px;color:var(--primary-dark);
+}
+
+/* 移动端抽屉 */
+.drawer-overlay{
+  display:none;position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:200;
+}
+.drawer-overlay.show{display:block}
+.mobile-drawer{
+  position:fixed;top:0;right:-280px;width:280px;height:100%;background:var(--surface);
+  z-index:201;transition:right .25s ease;padding:20px;overflow-y:auto;
+}
+.mobile-drawer.open{right:0}
+.mobile-drawer .drawer-close{
+  background:none;border:none;font-size:22px;color:var(--text-secondary);
+  margin-bottom:20px;display:block;margin-left:auto;
+}
+.mobile-drawer nav{display:flex;flex-direction:column;gap:4px}
+.mobile-drawer nav a{padding:10px 12px;border-radius:var(--radius-btn);font-size:15px;color:var(--text-secondary)}
+.mobile-drawer nav a:hover{background:var(--bg)}
+
+/* 主容器 */
+.container{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+}
+
+/* 首屏 */
+.hero{
+  position:relative;
+  padding:48px 0 40px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#f7f3ee 0%,#efe6d8 60%,#e8dccb 100%);
+  border-bottom:1px solid var(--border);
+}
+.hero::before{
+  content:"";position:absolute;right:-80px;top:-80px;
+  width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(139,90,43,.12) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;left:-40px;bottom:-60px;
+  width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,154,108,.18) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{
+  position:relative;z-index:1;
+  display:grid;grid-template-columns:1fr 380px;gap:40px;align-items:center;
+}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  background:rgba(139,90,43,.1);color:var(--primary-dark);
+  padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;
+  margin-bottom:16px;
+}
+.hero-badge .pulse{
+  width:6px;height:6px;border-radius:50%;background:var(--primary);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero h1{
+  font-size:34px;line-height:1.3;color:var(--primary-dark);
+  margin-bottom:16px;font-weight:800;
+}
+.hero-desc{
+  font-size:15px;color:var(--text-secondary);max-width:560px;
+  margin-bottom:24px;line-height:1.8;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:6px;
+  background:var(--primary);color:#fff;padding:10px 22px;
+  border-radius:var(--radius-btn);font-size:14px;font-weight:600;
+  border:none;transition:background .2s,transform .2s;
+}
+.btn-primary:hover{background:var(--primary-dark);transform:translateY(-2px)}
+.btn-ghost{
+  display:inline-flex;align-items:center;gap:6px;
+  background:transparent;color:var(--primary-dark);
+  padding:10px 22px;border-radius:var(--radius-btn);font-size:14px;font-weight:600;
+  border:1px solid var(--primary-light);transition:background .2s,transform .2s;
+}
+.btn-ghost:hover{background:rgba(139,90,43,.06);transform:translateY(-2px)}
+.hero-visual{
+  position:relative;
+  display:flex;justify-content:center;align-items:center;
+}
+.hero-visual svg{width:100%;max-width:340px;height:auto;filter:drop-shadow(0 8px 24px rgba(92,58,23,.15))}
+
+/* 三栏布局 */
+.layout-3col{
+  display:grid;
+  grid-template-columns:180px 1fr 240px;
+  gap:28px;
+  padding:32px 0 48px;
+  align-items:start;
+}
+/* 左频道栏 */
+.channel-sidebar{
+  position:sticky;top:var(--sticky-offset);
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:16px 12px;
+  box-shadow:var(--shadow-default);
+}
+.channel-sidebar h2{
+  font-size:13px;color:var(--text-muted);font-weight:600;
+  padding:0 8px;margin-bottom:10px;letter-spacing:1px;
+}
+.channel-sidebar ul{display:flex;flex-direction:column;gap:2px}
+.channel-sidebar li a{
+  display:block;padding:8px 10px;border-radius:var(--radius-btn);
+  font-size:14px;color:var(--text-secondary);
+  transition:background .2s,color .2s;
+}
+.channel-sidebar li a:hover{background:var(--bg);color:var(--primary-dark)}
+.channel-sidebar li a.active{background:var(--primary);color:#fff}
+
+/* 中主内容 */
+.main-col{min-width:0}
+.section-block{
+  margin-bottom:36px;
+}
+.section-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:16px;
+}
+.section-header h2{
+  font-size:20px;font-weight:700;color:var(--text);
+  position:relative;padding-left:14px;
+}
+.section-header h2::before{
+  content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:4px;height:18px;background:var(--primary);border-radius:2px;
+}
+.section-header .more-link{
+  font-size:13px;color:var(--text-muted);
+  transition:color .2s;
+}
+.section-header .more-link:hover{color:var(--primary)}
+
+/* 概览 */
+.overview-text{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:22px 24px;
+  font-size:14.5px;line-height:1.9;color:var(--text-secondary);
+  box-shadow:var(--shadow-default);
+}
+.overview-text p+p{margin-top:12px}
+.overview-text strong{color:var(--primary-dark)}
+
+/* 精选卡片网格 */
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  gap:16px;
+}
+.content-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);overflow:hidden;
+  box-shadow:var(--shadow-default);
+  transition:box-shadow .25s,transform .25s;
+  display:flex;flex-direction:column;
+}
+.content-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px)}
+.content-card .card-img{
+  width:100%;height:140px;object-fit:cover;background:var(--bg);
+}
+.content-card .card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column}
+.content-card .card-type{
+  display:inline-block;font-size:11px;font-weight:600;
+  color:var(--primary-dark);background:rgba(139,90,43,.1);
+  padding:2px 8px;border-radius:var(--radius-tag);margin-bottom:8px;
+  align-self:flex-start;
+}
+.content-card h3{
+  font-size:15px;font-weight:700;line-height:1.4;margin-bottom:6px;
+  color:var(--text);
+}
+.content-card .card-desc{
+  font-size:13px;color:var(--text-secondary);line-height:1.6;
+  flex:1;margin-bottom:10px;
+}
+.content-card .card-meta{
+  display:flex;align-items:center;gap:12px;
+  font-size:12px;color:var(--text-muted);
+  border-top:1px solid var(--border);padding-top:8px;
+}
+.content-card .card-tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.content-card .card-tags span{
+  font-size:11px;color:var(--text-muted);background:var(--bg);
+  padding:1px 6px;border-radius:var(--radius-tag);
+}
+
+/* 最新更新列表 */
+.update-list{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);overflow:hidden;
+  box-shadow:var(--shadow-default);
+}
+.update-item{
+  display:flex;align-items:flex-start;gap:14px;
+  padding:14px 18px;border-bottom:1px solid var(--border);
+  transition:background .2s;
+}
+.update-item:last-child{border-bottom:none}
+.update-item:hover{background:var(--bg)}
+.update-item .update-num{
+  flex-shrink:0;width:28px;height:28px;border-radius:50%;
+  background:var(--bg);color:var(--primary-dark);
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;
+}
+.update-item .update-num.top{background:var(--primary);color:#fff}
+.update-item .update-content{flex:1;min-width:0}
+.update-item .update-title{
+  font-size:14px;font-weight:600;color:var(--text);margin-bottom:2px;
+}
+.update-item .update-desc{
+  font-size:12.5px;color:var(--text-muted);line-height:1.5;
+}
+.update-item .update-date{
+  flex-shrink:0;font-size:12px;color:var(--text-muted);
+}
+
+/* 分类入口 */
+.category-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:12px;
+}
+.category-item{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:16px 14px;
+  text-align:center;box-shadow:var(--shadow-default);
+  transition:box-shadow .2s,transform .2s,border-color .2s;
+  cursor:pointer;
+}
+.category-item:hover{box-shadow:var(--shadow-hover);transform:translateY(-2px);border-color:var(--primary-light)}
+.category-item .cat-icon{
+  width:40px;height:40px;margin:0 auto 8px;
+  border-radius:50%;background:rgba(139,90,43,.08);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;
+}
+.category-item .cat-name{font-size:13.5px;font-weight:600;color:var(--text);margin-bottom:2px}
+.category-item .cat-count{font-size:11px;color:var(--text-muted)}
+
+/* 深度解析 */
+.deep-dive{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:28px 30px;
+  box-shadow:var(--shadow-default);
+}
+.deep-dive h3{
+  font-size:17px;font-weight:700;color:var(--primary-dark);
+  margin:22px 0 10px;padding-left:12px;border-left:3px solid var(--primary);
+}
+.deep-dive h3:first-child{margin-top:0}
+.deep-dive p{
+  font-size:14.5px;color:var(--text-secondary);line-height:1.9;margin-bottom:12px;
+}
+.deep-dive ul{
+  margin:8px 0 14px 20px;list-style:disc;
+  font-size:14px;color:var(--text-secondary);line-height:1.8;
+}
+.deep-dive ul li{margin-bottom:4px}
+.deep-dive .highlight-box{
+  background:var(--bg);border-left:3px solid var(--primary-light);
+  padding:12px 16px;border-radius:0 var(--radius-btn) var(--radius-btn) 0;
+  margin:12px 0;font-size:13.5px;color:var(--text-secondary);
+}
+.deep-dive table{
+  width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px;
+}
+.deep-dive table th,.deep-dive table td{
+  border:1px solid var(--border);padding:8px 12px;text-align:left;
+}
+.deep-dive table th{background:var(--bg);color:var(--primary-dark);font-weight:600}
+
+/* FAQ */
+.faq-list{display:flex;flex-direction:column;gap:8px}
+.faq-item{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);overflow:hidden;
+  box-shadow:var(--shadow-default);
+}
+.faq-item summary{
+  padding:14px 18px;font-size:14.5px;font-weight:600;
+  color:var(--text);cursor:pointer;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:background .2s;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{
+  content:"+";font-size:18px;color:var(--primary);font-weight:400;
+  transition:transform .2s;
+}
+.faq-item[open] summary::after{content:"−"}
+.faq-item summary:hover{background:var(--bg)}
+.faq-item .faq-answer{
+  padding:0 18px 16px;font-size:14px;color:var(--text-secondary);
+  line-height:1.8;
+}
+
+/* 评论 */
+.comment-list{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.comment-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:14px 16px;
+  box-shadow:var(--shadow-default);
+}
+.comment-card .comment-head{
+  display:flex;align-items:center;gap:8px;margin-bottom:6px;
+}
+.comment-card .avatar{
+  width:28px;height:28px;border-radius:50%;
+  background:var(--primary-light);color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;font-weight:700;flex-shrink:0;
+}
+.comment-card .nickname{font-size:13px;font-weight:600;color:var(--text)}
+.comment-card .comment-time{font-size:11px;color:var(--text-muted);margin-left:auto}
+.comment-card .comment-text{font-size:13.5px;color:var(--text-secondary);line-height:1.6}
+
+/* 相关资讯 */
+.news-list{display:flex;flex-direction:column;gap:0}
+.news-item{
+  display:flex;gap:16px;padding:16px 0;
+  border-bottom:1px solid var(--border);
+}
+.news-item:last-child{border-bottom:none}
+.news-item img{
+  width:120px;height:80px;object-fit:cover;border-radius:var(--radius-btn);
+  flex-shrink:0;background:var(--bg);
+}
+.news-item .news-body{flex:1;min-width:0}
+.news-item h3{font-size:14.5px;font-weight:600;margin-bottom:4px}
+.news-item h3 a:hover{color:var(--primary)}
+.news-item .news-meta{font-size:12px;color:var(--text-muted);margin-bottom:4px}
+.news-item .news-summary{font-size:13px;color:var(--text-secondary);line-height:1.6}
+
+/* 相关推荐标签 */
+.tag-cloud{display:flex;flex-wrap:wrap;gap:8px}
+.tag-cloud a{
+  display:inline-block;padding:5px 14px;font-size:13px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:20px;color:var(--text-secondary);
+  transition:background .2s,color .2s,border-color .2s;
+}
+.tag-cloud a:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+/* 补充板块：可信度分层 */
+.credibility-table{
+  width:100%;border-collapse:collapse;font-size:13.5px;
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);overflow:hidden;
+}
+.credibility-table th{
+  background:var(--primary-dark);color:#f5e6d3;padding:10px 14px;
+  text-align:left;font-weight:600;
+}
+.credibility-table td{
+  padding:10px 14px;border-bottom:1px solid var(--border);
+  color:var(--text-secondary);
+}
+.credibility-table tr:last-child td{border-bottom:none}
+.credibility-table tr:hover td{background:var(--bg)}
+.badge-high{color:#2e7d32;font-weight:600}
+.badge-mid{color:#e65100;font-weight:600}
+.badge-low{color:#c62828;font-weight:600}
+
+/* 右辅助栏 */
+.aside-col{display:flex;flex-direction:column;gap:20px}
+.aside-panel{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:var(--radius-card);padding:16px;
+  box-shadow:var(--shadow-default);
+}
+.aside-panel h2{
+  font-size:14px;font-weight:700;color:var(--text);
+  margin-bottom:12px;padding-bottom:8px;
+  border-bottom:1px solid var(--border);
+}
+.hot-list{display:flex;flex-direction:column;gap:10px}
+.hot-list li{display:flex;gap:10px;align-items:flex-start}
+.hot-list .hot-rank{
+  flex-shrink:0;width:20px;height:20px;border-radius:4px;
+  background:var(--bg);color:var(--text-muted);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:700;margin-top:2px;
+}
+.hot-list li:nth-child(1) .hot-rank{background:var(--primary);color:#fff}
+.hot-list li:nth-child(2) .hot-rank{background:var(--primary-light);color:#fff}
+.hot-list li:nth-child(3) .hot-rank{background:#d4b896;color:#fff}
+.hot-list .hot-title{font-size:13px;font-weight:600;color:var(--text);line-height:1.4}
+.hot-list .hot-info{font-size:11px;color:var(--text-muted)}
+
+.aside-timeline{display:flex;flex-direction:column;gap:0;position:relative;padding-left:16px}
+.aside-timeline::before{
+  content:"";position:absolute;left:5px;top:4px;bottom:4px;
+  width:1px;background:var(--border);
+}
+.timeline-item{position:relative;padding-bottom:14px}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item::before{
+  content:"";position:absolute;left:-14px;top:5px;
+  width:9px;height:9px;border-radius:50%;
+  background:var(--surface);border:2px solid var(--primary-light);
+}
+.timeline-item .tl-date{font-size:11px;color:var(--text-muted)}
+.timeline-item .tl-text{font-size:12.5px;color:var(--text-secondary);line-height:1.5}
+
+.aside-links{display:flex;flex-direction:column;gap:6px}
+.aside-links a{
+  font-size:13px;color:var(--text-secondary);
+  padding:5px 8px;border-radius:var(--radius-btn);
+  transition:background .2s,color .2s;
+}
+.aside-links a:hover{background:var(--bg);color:var(--primary-dark)}
+
+/* 投稿互动板块 */
+.submit-section{
+  background:linear-gradient(135deg,rgba(139,90,43,.06),rgba(196,154,108,.1));
+  border:1px solid var(--border);border-radius:var(--radius-banner);
+  padding:24px 28px;
+}
+.submit-section h2{font-size:18px;font-weight:700;color:var(--primary-dark);margin-bottom:8px}
+.submit-section p{font-size:14px;color:var(--text-secondary);margin-bottom:16px}
+.submit-form{display:flex;gap:10px;flex-wrap:wrap}
+.submit-form input{
+  flex:1;min-width:200px;padding:9px 14px;font-size:14px;
+  border:1px solid var(--border);border-radius:var(--radius-btn);
+  background:var(--surface);color:var(--text);outline:none;
+}
+.submit-form input:focus{border-color:var(--primary-light)}
+.submit-form button{
+  padding:9px 24px;font-size:14px;font-weight:600;
+  background:var(--primary);color:#fff;border:none;
+  border-radius:var(--radius-btn);transition:background .2s;
+}
+.submit-form button:hover{background:var(--primary-dark)}
+.submit-hint{font-size:12px;color:var(--text-muted);margin-top:8px}
+
+/* 页尾 */
+.site-footer{
+  background:var(--primary-dark);color:#d4c4b0;
+  padding:40px 0 28px;margin-top:20px;
+}
+.footer-inner{
+  max-width:1360px;margin:0 auto;padding:0 20px;
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;
+}
+.footer-brand .footer-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand .footer-logo svg{width:30px;height:30px}
+.footer-brand .footer-logo span{font-size:16px;font-weight:700;color:#f5e6d3}
+.footer-brand .footer-desc{font-size:13px;line-height:1.8;color:#b8a68f;max-width:320px}
+.footer-col h3{font-size:14px;font-weight:600;color:#f5e6d3;margin-bottom:12px}
+.footer-col ul{display:flex;flex-direction:column;gap:6px}
+.footer-col ul a{font-size:13px;color:#b8a68f;transition:color .2s}
+.footer-col ul a:hover{color:#f5e6d3}
+.footer-bottom{
+  max-width:1360px;margin:28px auto 0;padding:16px 20px 0;
+  border-top:1px solid rgba(245,230,211,.15);
+  font-size:12px;color:#9a8b7a;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;
+}
+
+/* 回到顶部 */
+.back-to-top{
+  position:fixed;right:24px;bottom:32px;z-index:50;
+  width:42px;height:42px;border-radius:50%;
+  background:var(--primary);color:#fff;border:none;
+  box-shadow:var(--shadow-hover);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;opacity:0;visibility:hidden;
+  transition:opacity .25s,visibility .25s,transform .2s;
+}
+.back-to-top.show{opacity:1;visibility:visible}
+.back-to-top:hover{transform:translateY(-3px);background:var(--primary-dark)}
+
+/* 无结果提示 */
+.no-result{
+  display:none;padding:20px;text-align:center;
+  color:var(--text-muted);font-size:14px;
+}
+.no-result.show{display:block}
+
+/* 响应式 */
+@media (max-width:1024px){
+  .layout-3col{
+    grid-template-columns:200px 1fr;
+  }
+  .aside-col{display:none}
+  .hero-inner{grid-template-columns:1fr 300px;gap:24px}
+  .category-grid{grid-template-columns:repeat(4,1fr)}
+  .comment-list{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr 1fr;gap:24px}
+  .footer-brand{grid-column:1/-1}
+}
+@media (max-width:740px){
+  .main-nav{display:none}
+  .search-box{display:none}
+  .hamburger{display:flex}
+  .layout-3col{
+    grid-template-columns:1fr;
+    padding:20px 0 32px;
+  }
+  .channel-sidebar{
+    position:static;
+    display:flex;flex-direction:row;overflow-x:auto;
+    padding:10px 8px;gap:6px;scrollbar-width:none;
+  }
+  .channel-sidebar::-webkit-scrollbar{display:none}
+  .channel-sidebar h2{display:none}
+  .channel-sidebar ul{flex-direction:row;gap:4px}
+  .channel-sidebar li a{white-space:nowrap;font-size:13px;padding:6px 12px}
+  .hero{padding:32px 0 28px}
+  .hero-inner{grid-template-columns:1fr;gap:20px}
+  .hero h1{font-size:26px}
+  .hero-visual{display:none}
+  .category-grid{grid-template-columns:repeat(2,1fr)}
+  .card-grid{grid-template-columns:1fr}
+  .deep-dive{padding:20px 18px}
+  .footer-inner{grid-template-columns:1fr 1fr}
+  .announce-bar .announce-inner{padding:0 12px}
+  .comment-list{grid-template-columns:1fr}
+  .news-item{flex-direction:column;gap:8px}
+  .news-item img{width:100%;height:140px}
+  .back-to-top{right:16px;bottom:20px;width:38px;height:38px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce-bar" id="announceBar">
+  <div class="announce-inner">
+    <strong>康熙艳谭修复</strong>
+    <span class="dot"></span>
+    <div class="announce-scroll">
+      <span class="announce-item"><time datetime="2026-11-08">2026-11-08</time> 第12集4K修复版上线，夜景噪点压制完成</span>
+      <span class="announce-item">「艳谭档案」新增 7 篇分集画质拆解</span>
+      <span class="announce-item"><time datetime="2026-11-06">2026-11-06</time> 第9-11集繁体字幕校对稿发布</span>
+      <span class="announce-item">修复组招募 3 名闽南语台词听校志愿者</span>
+      <span class="announce-item"><time datetime="2026-11-04">2026-11-04</time> AI修复对比图集更新 21 组</span>
+      <span class="announce-item">第12集4K修复版上线，夜景噪点压制完成</span>
+      <span class="announce-item">「艳谭档案」新增 7 篇分集画质拆解</span>
+      <span class="announce-item"><time datetime="2026-11-06">2026-11-06</time> 第9-11集繁体字幕校对稿发布</span>
+      <span class="announce-item">修复组招募 3 名闽南语台词听校志愿者</span>
+      <span class="announce-item"><time datetime="2026-11-04">2026-11-04</time> AI修复对比图集更新 21 组</span>
+    </div>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="返回首页">
+      <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="2" y="2" width="36" height="36" rx="8" fill="#8b5a2b"/>
+        <path d="M12 14h16v3H12zM12 20h10v3H12zM12 26h13v2H12z" fill="#f5e6d3"/>
+        <circle cx="28" cy="27" r="4" fill="#c49a6c"/>
+      </svg>
+      <span class="brand-text">三级电视剧AI修复版康熙艳谭全集</span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="#overview" class="active">领域概览</a>
+      <a href="#featured">精选推荐</a>
+      <a href="#updates">修复进度</a>
+      <a href="#categories">分类筛选</a>
+      <a href="#deep-dive">画质解析</a>
+      <a href="#faq">常见问题</a>
+      <a href="#comments">观众评论</a>
+      <a href="#news">修复资讯</a>
+      <a href="#submit">投稿互动</a>
+    </nav>
+    <div class="header-actions">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索条目…" aria-label="搜索条目">
+        <button type="button" id="searchBtn" aria-label="搜索">搜索</button>
+      </div>
+      <button class="hamburger" id="hamburgerBtn" aria-label="打开菜单" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- 移动端抽屉 -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-label="移动端导航">
+  <button class="drawer-close" id="drawerClose" aria-label="关闭菜单">✕</button>
+  <nav>
+    <a href="#overview">领域概览</a>
+    <a href="#featured">精选推荐</a>
+    <a href="#updates">修复进度</a>
+    <a href="#categories">分类筛选</a>
+    <a href="#deep-dive">画质解析</a>
+    <a href="#faq">常见问题</a>
+    <a href="#comments">观众评论</a>
+    <a href="#news">修复资讯</a>
+    <a href="#submit">投稿互动</a>
+  </nav>
+</div>
+
+<!-- 首屏 -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge"><span class="pulse"></span> 修复档案持续更新中</div>
+        <h1>三级电视剧AI修复版康熙艳谭全集</h1>
+        <p class="hero-desc">汇聚《康熙艳谭》系列三级电视剧的AI修复版本：第1至12集4K修复对比、繁体中文字幕校对、闽南语原声轨修复进度，以及修复组公开的画质评判标准与版本差异记录。</p>
+        <div class="hero-actions">
+          <a href="#featured" class="btn-primary">浏览修复条目 →</a>
+          <a href="#deep-dive" class="btn-ghost">查看画质解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 320 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="20" y="30" width="200" height="130" rx="8" fill="#5c3a17" opacity=".9"/>
+          <rect x="32" y="42" width="176" height="96" rx="4" fill="#2b2118"/>
+          <rect x="32" y="42" width="176" height="96" rx="4" fill="url(#screenGrad)"/>
+          <defs>
+            <linearGradient id="screenGrad" x1="32" y1="42" x2="208" y2="138" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#8b5a2b" stop-opacity=".5"/>
+              <stop offset="1" stop-color="#c49a6c" stop-opacity=".25"/>
+            </linearGradient>
+          </defs>
+          <rect x="60" y="60" width="60" height="8" rx="2" fill="#f5e6d3" opacity=".7"/>
+          <rect x="60" y="76" width="120" height="4" rx="2" fill="#f5e6d3" opacity=".4"/>
+          <rect x="60" y="86" width="90" height="4" rx="2" fill="#f5e6d3" opacity=".3"/>
+          <rect x="60" y="100" width="40" height="20" rx="3" fill="#c49a6c" opacity=".5"/>
+          <circle cx="260" cy="80" r="28" stroke="#8b5a2b" stroke-width="2" fill="none" opacity=".5"/>
+          <path d="M252 80l6 6 12-12" stroke="#8b5a2b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <rect x="200" y="160" width="100" height="30" rx="4" fill="#c49a6c" opacity=".35"/>
+          <rect x="210" y="168" width="50" height="5" rx="2" fill="#f5e6d3" opacity=".5"/>
+          <rect x="210" y="178" width="70" height="4" rx="2" fill="#f5e6d3" opacity=".3"/>
+          <rect x="20" y="180" width="150" height="60" rx="6" fill="#efe6d8" stroke="#e3d9cc"/>
+          <rect x="32" y="192" width="60" height="4" rx="2" fill="#8b5a2b" opacity=".4"/>
+          <rect x="32" y="202" width="110" height="3" rx="1.5" fill="#8b5a2b" opacity=".2"/>
+          <rect x="32" y="212" width="90" height="3" rx="1.5" fill="#8b5a2b" opacity=".2"/>
+          <circle cx="140" cy="196" r="6" fill="#8b5a2b" opacity=".3"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主内容区：三栏门户 -->
+<div class="container">
+  <div class="layout-3col">
+
+    <!-- 左频道索引 -->
+    <aside class="channel-sidebar" aria-label="频道索引">
+      <h2>频道索引</h2>
+      <ul>
+        <li><a href="#overview" class="active">领域概览</a></li>
+        <li><a href="#featured">精选推荐</a></li>
+        <li><a href="#updates">修复进度</a></li>
+        <li><a href="#categories">分类筛选</a></li>
+        <li><a href="#deep-dive">画质解析</a></li>
+        <li><a href="#guide">观看指南</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#comments">观众评论</a></li>
+        <li><a href="#news">修复资讯</a></li>
+        <li><a href="#related">相关推荐</a></li>
+        <li><a href="#credibility">可信度分层</a></li>
+        <li><a href="#submit">投稿互动</a></li>
+      </ul>
+    </aside>
+
+    <!-- 中主内容 -->
+    <main class="main-col">
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section-block" id="overview">
+        <div class="section-header">
+          <h2>三级电视剧修复领域概览</h2>
+        </div>
+        <div class="overview-text">
+          <p>《康熙艳谭》是1990年代台湾制作的三级电视剧，全系列共12集，以康熙年间民间轶闻为叙事框架。原版以VHS录像带发行，画质为480i隔行扫描，存在明显色彩溢出、暗部噪点和磁迹偏移。2026年由民间修复组「艳谭档案」主导的AI修复计划，采用Real-ESRGAN对底片扫描源进行4倍超分，再配合Deinterlace+手动调色逐集处理。</p>
+          <p>目前修复版本覆盖第1至12集，其中第1-8集为1080p版本，第9-12集升级为4K。修复重点集中在三处：康熙南巡场景的宽动态范围还原、室内烛光场景的暗部细节保留、以及闽南语原声轨的降噪处理。修复组同时公开了每集的<strong>前后对比帧</strong>和<strong>PSNR/SSIM指标</strong>，供观众自行判断修复程度。</p>
+          <p>值得关注的方向包括：AI超分对胶片颗粒的保留与抹除边界、古装剧服饰纹理在4K下的可辨识度、以及三级片修复中裸露场景的肤色还原争议。修复组在2026年10月曾就是否对第7集沐浴场景做局部磨皮发起投票，最终以62%反对票保留原始颗粒感。</p>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section-block" id="featured">
+        <div class="section-header">
+          <h2>精选修复条目</h2>
+          <a href="#updates" class="more-link">查看全部进度 →</a>
+        </div>
+        <div class="card-grid" id="featuredGrid">
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep1-4k/400/300" alt="康熙艳谭第1集4K修复版开场康熙南巡场景对比" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">4K修复 · 第1集</span>
+              <h3>康熙艳谭 第1集「南巡初夜」4K修复版</h3>
+              <p class="card-desc">开场3分钟南巡仪仗镜头经Real-ESRGAN 4倍超分，旗帜纹理从模糊色块变为可辨的龙纹刺绣。修复组标注了暗部提亮参数，噪点压制强度为0.6。</p>
+              <div class="card-tags"><span>4K超分</span><span>龙纹刺绣</span><span>暗部提亮</span></div>
+              <div class="card-meta"><span>修复评分 8.7</span><span>对比帧 42组</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep5-subtitle/400/300" alt="康熙艳谭第5集繁体中文字幕校对版界面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">字幕校对 · 第5集</span>
+              <h3>第5集「月下艳谭」繁体字幕校对版</h3>
+              <p class="card-desc">修复组参照1996年发行版VHS封底台词，修正了旧字幕中17处闽南语借词误写，其中「沿街」改回「沿街路」，「歹势」统一为「拍谢」。</p>
+              <div class="card-tags"><span>字幕校对</span><span>闽南语借词</span><span>VHS封底</span></div>
+              <div class="card-meta"><span>修正 17处</span><span>校对日期 11-06</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep7-debate/400/300" alt="康熙艳谭第7集沐浴场景修复前后颗粒感对比" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">争议投票 · 第7集</span>
+              <h3>第7集沐浴场景：颗粒保留投票结果</h3>
+              <p class="card-desc">修复组就是否对第7集沐浴场景做局部磨皮发起投票，持续4天共收到1,842票。62%选择保留原始颗粒感，修复组据此放弃磨皮方案。</p>
+              <div class="card-tags"><span>颗粒保留</span><span>投票</span><span>磨皮争议</span></div>
+              <div class="card-meta"><span>1,842票</span><span>反对磨皮 62%</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep9-4k/400/300" alt="康熙艳谭第9集4K修复版夜景噪点压制效果" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">4K修复 · 第9集</span>
+              <h3>第9集「夜审」4K版夜景噪点压制</h3>
+              <p class="card-desc">夜间牢房场景原版ISO噪点严重，修复组采用Neat Video降噪后以30%透明度回叠颗粒层，避免「塑料感」。PSNR从28.4dB提升至34.1dB。</p>
+              <div class="card-tags"><span>夜景降噪</span><span>PSNR提升</span><span>颗粒回叠</span></div>
+              <div class="card-meta"><span>PSNR 34.1dB</span><span>对比帧 36组</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep11-audio/400/300" alt="康熙艳谭第11集闽南语原声轨降噪波形图" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">音轨修复 · 第11集</span>
+              <h3>第11集闽南语原声轨降噪与对白清晰化</h3>
+              <p class="card-desc">原版VHS音轨存在50Hz电流底噪和磁带嘶声。修复组用iZotope RX 10分离人声与底噪，保留闽南语入声字尾音，对白清晰度主观评分从5.2升至7.8。</p>
+              <div class="card-tags"><span>音轨降噪</span><span>闽南语</span><span>iZotope RX</span></div>
+              <div class="card-meta"><span>清晰度 5.2→7.8</span><span>底噪 -18dB</span></div>
+            </div>
+          </article>
+          <article class="content-card">
+            <img class="card-img" src="https://picsum.photos/seed/kxyt-ep12-final/400/300" alt="康熙艳谭第12集大结局4K修复版封面" width="400" height="300" loading="lazy">
+            <div class="card-body">
+              <span class="card-type">4K修复 · 第12集</span>
+              <h3>第12集「艳谭终章」4K修复版上线</h3>
+              <p class="card-desc">全系列最后一集完成4K修复，片尾3分钟长镜头经时域降噪处理，烛光闪烁频率从原版12Hz修正为24Hz，消除频闪感。修复组同步发布完整参数表。</p>
+              <div class="card-tags"><span>大结局</span><span>时域降噪</span><span>烛光频闪</span></div>
+              <div class="card-meta"><span>修复评分 9.1</span><span>上线 11-08</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="no-result" id="noResult">没有匹配的修复条目，请尝试其他关键词。</div>
+      </section>
+
+      <!-- 3. 最新更新 / 修复进度 -->
+      <section class="section-block" id="updates">
+        <div class="section-header">
+          <h2>最新修复进度与动态</h2>
+          <a href="#news" class="more-link">修复资讯 →</a>
+        </div>
+        <ul class="update-list">
+          <li class="update-item">
+            <span class="update-num top">1</span>
+            <div class="update-content">
+              <div class="update-title">第12集「艳谭终章」4K修复版发布</div>
+              <div class="update-desc">片尾长镜头时域降噪完成，烛光频闪修正为24Hz，完整参数表已上传至「艳谭档案」栏目。</div>
+            </div>
+            <span class="update-date">11-08</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num top">2</span>
+            <div class="update-content">
+              <div class="update-title">第9-11集繁体字幕校对稿发布</div>
+              <div class="update-desc">修正闽南语借词误写共31处，参照1996年VHS封底台词与1998年重映版字幕对照。</div>
+            </div>
+            <span class="update-date">11-06</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">3</span>
+            <div class="update-content">
+              <div class="update-title">AI修复前后对比图集新增21组</div>
+              <div class="update-desc">覆盖第1、3、6、9集共21个关键帧，含南巡仪仗、牢房夜审、沐浴场景三类光线条件。</div>
+            </div>
+            <span class="update-date">11-04</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">4</span>
+            <div class="update-content">
+              <div class="update-title">修复组招募3名闽南语台词听校志愿者</div>
+              <div class="update-desc">要求能辨识泉州腔与漳州腔差异，负责第10-12集对白中入声字尾音核对，截止11月15日。</div>
+            </div>
+            <span class="update-date">11-03</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">5</span>
+            <div class="update-content">
+              <div class="update-title">第8集「庙会」色彩校正完成</div>
+              <div class="update-desc">原版偏黄绿，修复组以庙会灯笼为白平衡参考，色温从5600K调整为5200K，红色饱和度+12。</div>
+            </div>
+            <span class="update-date">11-02</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">6</span>
+            <div class="update-content">
+              <div class="update-title">第6集暗部细节增强参数公开</div>
+              <div class="update-desc">阴影提亮曲线使用S型节点，暗部0-15 IRE区间增益+8，避免高光溢出。附DaVinci节点图。</div>
+            </div>
+            <span class="update-date">10-30</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">7</span>
+            <div class="update-content">
+              <div class="update-title">第4集「客栈」去隔行处理完成</div>
+              <div class="update-desc">采用QTGMC反交错算法，运动场景梳齿状伪影消除率约93%，静态场景保留胶片颗粒。</div>
+            </div>
+            <span class="update-date">10-28</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">8</span>
+            <div class="update-content">
+              <div class="update-title">第3集服饰纹理对比图发布</div>
+              <div class="update-desc">康熙龙袍刺绣在4K下可辨金线走向，原版1080i仅能看出色块。附局部100%裁切对比。</div>
+            </div>
+            <span class="update-date">10-25</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">9</span>
+            <div class="update-content">
+              <div class="update-title">第2集闽南语对白时间轴校准</div>
+              <div class="update-desc">原版音轨存在约120ms音画偏移，修复组以场记板为基准重新对齐，同步误差控制在±16ms内。</div>
+            </div>
+            <span class="update-date">10-22</span>
+          </li>
+          <li class="update-item">
+            <span class="update-num">10</span>
+            <div class="update-content">
+              <div class="update-title">第1集4K修复版V2更新</div>
+              <div class="update-desc">修复V1版本南巡场景天空区域过曝问题，高光滚降曲线重新调整，云层细节恢复。</div>
+            </div>
+            <span class="update-date">10-18</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section-block" id="categories">
+        <div class="section-header">
+          <h2>分类入口</h2>
+        </div>
+        <div class="category-grid">
+          <a href="#featured" class="category-item">
+            <div class="cat-icon">🎞️</div>
+            <div class="cat-name">4K修复集</div>
+            <div class="cat-count">第1-12集</div>
+          </a>
+          <a href="#updates" class="category-item">
+            <div class="cat-icon">📝</div>
+            <div class="cat-name">字幕校对</div>
+            <div class="cat-count">31处修正</div>
+          </a>
+          <a href="#deep-dive" class="category-item">
+            <div class="cat-icon">🔍</div>
+            <div class="cat-name">画质对比</div>
+            <div class="cat-count">99组对比帧</div>
+          </a>
+          <a href="#guide" class="category-item">
+            <div class="cat-icon">🎧</div>
+            <div class="cat-name">闽南语音轨</div>
+            <div class="cat-count">12集全</div>
+          </a>
+          <a href="#comments" class="category-item">
+            <div class="cat-icon">💬</div>
+            <div class="cat-name">观众评论</div>
+            <div class="cat-count">14条</div>
+          </a>
+          <a href="#news" class="category-item">
+            <div class="cat-icon">📰</div>
+            <div class="cat-name">修复资讯</div>
+            <div class="cat-count">6条</div>
+          </a>
+          <a href="#credibility" class="category-item">
+            <div class="cat-icon">📊</div>
+            <div class="cat-name">可信度分层</div>
+            <div class="cat-count">3层</div>
+          </a>
+          <a href="#submit" class="category-item">
+            <div class="cat-icon">✍️</div>
+            <div class="cat-name">投稿互动</div>
+            <div class="cat-count">开放中</div>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section-block" id="deep-dive">
+        <div class="section-header">
+          <h2>三级电视剧AI修复深度解析</h2>
+        </div>
+        <div class="deep-dive">
+          <h3>AI超分对胶片颗粒的保留边界</h3>
+          <p>《康熙艳谭》原版为16mm胶片转VHS发行，胶片颗粒是画面质感的一部分。修复组第1集使用Real-ESRGAN 4倍超分时，默认参数会连带抹除约70%的颗粒结构，导致人物面部呈现「水磨」感。第1集V1版本发布后，修复组在对比帧中标注了面部三角区颗粒密度：原版每平方厘米约120颗粒，V1仅剩38颗粒。</p>
+          <p>调整方案为「超分后回叠颗粒层」：从原版VHS中提取颗粒噪声，以30%透明度叠加回超分画面。第1集V2版本将颗粒密度恢复至每平方厘米85颗粒，面部纹理主观评分从6.1升至7.9（满分10）。这一参数随后被固定为全系列默认值，第9-12集4K版沿用同一颗粒回叠强度。</p>
+          <div class="highlight-box">可核对指标：第1集V1到V2，颗粒密度从38→85颗粒/cm²；面部纹理主观评分6.1→7.9；PSNR从31.2dB→29.8dB（颗粒回叠导致PSNR略降，但主观评价提升）。</div>
+
+          <h3>裸露场景的肤色还原争议</h3>
+          <p>第7集沐浴场景是系列中裸露镜头最集中的段落，原版VHS在暖色烛光下肤色偏橙红，AI超分容易将色偏放大。修复组最初采用自动白平衡，结果肤色被校正为偏粉白的「塑料感」，引发观众在评论区反对。</p>
+          <p>修复组随后在10月21日发起投票，选项为「保留原始颗粒与色偏」和「局部磨皮+肤色校正」。4天收到1,842票，62%选择保留原始颗粒。最终方案：肤色色相不做自动校正，仅将橙红偏移量从+18降至+9，磨皮半径设为0。修复组在参数表中标注了这一决策的依据：投票数据与12帧肤色取样值。</p>
+          <table>
+            <tr><th>修复阶段</th><th>肤色色相偏移</th><th>磨皮半径</th><th>观众反馈</th></tr>
+            <tr><td>自动白平衡版</td><td>+2（偏粉）</td><td>3px</td><td>反对「塑料感」</td></tr>
+            <tr><td>投票后最终版</td><td>+9（保留暖调）</td><td>0px</td><td>62%支持保留颗粒</td></tr>
+          </table>
+
+          <h3>修复画质的三层评判标准</h3>
+          <p>修复组公开的评判标准分为三层，每层有具体可核对的指标，而非笼统的「画质好」：</p>
+          <ul>
+            <li><strong>客观指标层：</strong>PSNR不低于28dB，SSIM不低于0.85，去隔行后梳齿伪影残留率低于5%。第9集PSNR 34.1dB、SSIM 0.91，均达标。</li>
+            <li><strong>主观质感层：</strong>颗粒密度保持在原版60%-80%区间，肤色色相偏移不超过+10，暗部0-15 IRE区间细节可辨。第7集颗粒密度为原版72%，符合标准。</li>
+            <li><strong>版本可追溯层：</strong>每集修复参数表需记录源文件哈希值、超分模型版本、降噪强度、调色节点图。第1-12集参数表已全部公开，第9集参数表包含14个DaVinci节点。</li>
+          </ul>
+          <p>这一三层标准在10月25日第3集服饰纹理对比图发布后被其他修复组引用，其中「版本可追溯层」被「老剧修复联盟」采纳为推荐规范。</p>
+
+          <h3>闽南语原声轨的修复策略</h3>
+          <p>《康熙艳谭》原声为闽南语泉州腔，VHS音轨存在50Hz电流底噪和磁带嘶声。第11集修复时，iZotope RX 10的人声分离算法会将闽南语入声字尾音（如「-p」「-t」「-k」）误判为噪声一并削弱。修复组对比了分离前后波形，发现入声字尾音能量损失约40%。</p>
+          <p>解决方案为「分频段处理」：500Hz以下做全频段降噪，500Hz-4kHz区间仅对持续性底噪做窄带滤波，保留瞬态入声。处理后对白清晰度主观评分从5.2升至7.8，入声字尾音能量保留率约88%。第2集音画偏移校准也采用了类似的分段处理思路，将120ms偏移拆分为磁带起始段和录制段两部分分别对齐。</p>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 / 消费路径 -->
+      <section class="section-block" id="guide">
+        <div class="section-header">
+          <h2>修复版观看与判断指南</h2>
+        </div>
+        <div class="deep-dive" style="padding:22px 26px">
+          <p>面对12集不同修复程度的版本，观看顺序和判断依据可以按以下路径展开：</p>
+          <ul>
+            <li><strong>先看第1集V2版：</strong>V2修复了V1的天空过曝问题，颗粒密度恢复至85颗粒/cm²，是全系列修复参数最成熟的起点。看完V2再回看V1，能直观感受高光滚降曲线的差异。</li>
+            <li><strong>第9-12集优先看4K版：</strong>4K版在夜景和暗部细节上明显优于1080p版。第9集牢房夜审场景的PSNR从28.4dB提升至34.1dB，暗部墙面砖缝在4K下可辨，1080p版则糊成一片。</li>
+            <li><strong>判断一集修复是否值得投入时间：</strong>先看参数表里的PSNR和SSIM是否达标，再看颗粒密度是否在60%-80%区间，最后看肤色色相偏移是否超过+10。三项中任一项不达标，该集修复优先级可往后放。</li>
+            <li><strong>同类修复版本比较：</strong>第7集有「自动白平衡版」和「投票后最终版」两个版本。比较时看肤色色相偏移量：+2的版本偏粉，+9的版本保留暖调。喜欢原版质感的选+9，追求「干净画面」的选+2，但后者磨皮半径3px，面部细节有损失。</li>
+            <li><strong>闽南语对白听不清时：</strong>优先看第11集的分频段处理版，入声字尾音保留率88%。第2集音画偏移校准版也值得对照，同步误差控制在±16ms内。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section-block" id="faq">
+        <div class="section-header">
+          <h2>常见问题</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>第7集沐浴场景为什么有两个修复版本？</summary>
+            <div class="faq-answer">修复组最初发布的是自动白平衡版，肤色偏粉且做了3px磨皮，被观众批评「塑料感」。10月21日发起投票后，62%选择保留原始颗粒，修复组据此推出投票后最终版，肤色色相偏移从+2调整为+9，磨皮半径归零。两个版本在「艳谭档案」栏目均可查看对比帧。</div>
+          </details>
+          <details class="faq-item">
+            <summary>4K修复版和1080p版的画质差距具体在哪里？</summary>
+            <div class="faq-answer">差距集中在暗部细节和纹理可辨度。第9集牢房夜审场景，4K版PSNR 34.1dB，1080p版28.4dB；4K版暗部墙面砖缝可辨，1080p版糊成一片。第3集龙袍刺绣在4K下能看清金线走向，1080p仅能看出色块。第1-8集目前只有1080p修复版，第9-12集为4K版。</div>
+          </details>
+          <details class="faq-item">
+            <summary>闽南语原声轨的入声字尾音修复到什么程度？</summary>
+            <div class="faq-answer">第11集采用分频段处理，500Hz-4kHz区间仅做窄带滤波，入声字尾音（-p/-t/-k）能量保留率约88%。对比未处理的VHS原轨，分离算法直接处理会损失约40%的入声能量。修复组在参数表中标注了处理前后的波形对比图，位于第11集音轨修复条目下。</div>
+          </details>
+          <details class="faq-item">
+            <summary>修复组公开的PSNR和SSIM指标怎么解读？</summary>
+            <div class="faq-answer">PSNR不低于28dB、SSIM不低于0.85是修复组设定的客观达标线。第9集PSNR 34.1dB、SSIM 0.91，高于达标线。但PSNR在颗粒回叠后会略降，第1集V2因颗粒回叠PSNR从31.2dB降至29.8dB，主观评分反而从6.1升至7.9。指标需结合颗粒密度和肤色偏移一起看。</div>
+          </details>
+          <details class="faq-item">
+            <summary>第2集音轨的120ms偏移是怎么校准的？</summary>
+            <div class="faq-answer">原版VHS音轨存在约120ms音画不同步，修复组以场记板合板帧为基准，将偏移拆分为磁带起始段和录制段两部分分别对齐。校准后同步误差控制在±16ms内，低于人眼可察觉的±40ms阈值。参数表记录了每段的偏移样本点，共标注了23个同步参考帧。</div>
+          </details>
+          <details class="faq-item">
+            <summary>为什么第8集要做色彩校正？</summary>
+            <div class="faq-answer">第8集「庙会」原版VHS整体偏黄绿，修复组以庙会灯笼的暖红色作为白平衡参考，将色温从5600K调整为5200K，红色饱和度提升12。校正后灯笼红色不再发灰，但修复组保留了约8%的原始黄绿偏移，避免画面过于「现代」。调整前后的色温与饱和度数值记录在修复参数表中。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section-block" id="comments">
+        <div class="section-header">
+          <h2>观众评论</h2>
+        </div>
+        <div class="comment-list">
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">阿</span>
+              <span class="nickname">阿宏看老剧</span>
+              <span class="comment-time">11-08 14:22</span>
+            </div>
+            <p class="comment-text">第12集片尾那个长镜头，烛光终于不闪了。原版看的时候眼睛疼，修复版24Hz舒服很多。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">艹</span>
+              <span class="nickname">艹艹艹</span>
+              <span class="comment-time">11-08 11:05</span>
+            </div>
+            <p class="comment-text">第7集投票我投了保留颗粒，结果真没磨皮。但说实话肤色还是有点橙，能接受。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">L</span>
+              <span class="nickname">Lily_1978</span>
+              <span class="comment-time">11-07 22:41</span>
+            </div>
+            <p class="comment-text">第1集V2的天空终于不曝了，V1那个白云糊成一片白，看着难受。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">老</span>
+              <span class="nickname">老猫不熬夜</span>
+              <span class="comment-time">11-07 19:33</span>
+            </div>
+            <p class="comment-text">PSNR降了但主观好了，这个道理我懂。不过参数表里的节点图看不懂，能不能出个简化版。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">台</span>
+              <span class="nickname">台南阿明</span>
+              <span class="comment-time">11-07 16:18</span>
+            </div>
+            <p class="comment-text">闽南语入声终于清楚了，第11集「拍谢」那个-t尾音原来根本没听出来。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">修</span>
+              <span class="nickname">修复组观察员</span>
+              <span class="comment-time">11-06 21:07</span>
+            </div>
+            <p class="comment-text">第9-11集字幕校对那个「沿街路」改得好，旧字幕写「沿街」意思差蛮多。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">小</span>
+              <span class="nickname">小陈同学</span>
+              <span class="comment-time">11-06 13:52</span>
+            </div>
+            <p class="comment-text">4K版文件太大了，硬盘塞不下。1080p版其实也够看，第9集暗部确实糊但剧情熟。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">A</span>
+              <span class="nickname">Alex_W</span>
+              <span class="comment-time">11-05 20:14</span>
+            </div>
+            <p class="comment-text">第3集龙袍金线真的能看到了，以前只能看到一团黄。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">阿</span>
+              <span class="nickname">阿德勒的猫</span>
+              <span class="comment-time">11-05 15:37</span>
+            </div>
+            <p class="comment-text">第4集去隔行之后运动镜头顺滑了，但静态画面有点锐化过度，人物边缘有白边。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">粥</span>
+              <span class="nickname">粥粥不是周周</span>
+              <span class="comment-time">11-04 22:09</span>
+            </div>
+            <p class="comment-text">招募听校志愿者那个，我泉州腔不太行，能听出腔调但分不清漳州腔，算了。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">B</span>
+              <span class="nickname">Bosco_88</span>
+              <span class="comment-time">11-04 10:26</span>
+            </div>
+            <p class="comment-text">第2集音画偏移修了120ms，真的假的，我得回去重新看一遍合板那里。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">陈</span>
+              <span class="nickname">陈伯看片</span>
+              <span class="comment-time">11-03 18:44</span>
+            </div>
+            <p class="comment-text">第8集庙会灯笼那个红色调得好，原来发灰，现在有点过年的感觉了。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">N</span>
+              <span class="nickname">Nina在台北</span>
+              <span class="comment-time">11-03 09:12</span>
+            </div>
+            <p class="comment-text">第9集夜审那个砖墙，4K版真的能数砖缝，有点夸张。</p>
+          </div>
+          <div class="comment-card">
+            <div class="comment-head">
+              <span class="avatar">路</span>
+              <span class="nickname">路过打酱油</span>
+              <span class="comment-time">11-02 21:30</span>
+            </div>
+            <p class="comment-text">我就想问一下修复组收不收钱，纯好奇。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section-block" id="news">
+        <div class="section-header">
+          <h2>修复资讯</h2>
+        </div>
+        <div class="news-list">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-ep12/600/400" alt="康熙艳谭第12集4K修复版上线公告截图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#updates">第12集4K修复版11月8日上线，时域降噪参数同步公开</a></h3>
+              <div class="news-meta">2026-11-08 · 艳谭档案</div>
+              <p class="news-summary">修复组公开的时域降噪强度为0.35，烛光闪烁频率从原版12Hz修正为24Hz。完整DaVinci节点图包含11个节点，其中3个用于暗部提亮。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-subtitle/600/400" alt="康熙艳谭繁体字幕校对稿第9-11集发布" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#updates">第9-11集繁体字幕校对稿发布，修正31处闽南语借词</a></h3>
+              <div class="news-meta">2026-11-06 · 艳谭档案</div>
+              <p class="news-summary">校对参照1996年VHS封底台词与1998年重映版字幕。「拍谢」统一替换旧版「歹势」，涉及第9集3处、第10集12处、第11集16处。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-vote/600/400" alt="康熙艳谭第7集沐浴场景修复投票结果" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#featured">第7集沐浴场景修复投票结果：62%选择保留颗粒</a></h3>
+              <div class="news-meta">2026-11-05 · 艳谭档案</div>
+              <p class="news-summary">4天投票共1,842票参与，反对磨皮方案占62%。修复组据此放弃3px磨皮半径，肤色色相偏移从+2调整为+9，保留原始暖调。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-volunteer/600/400" alt="康熙艳谭修复组招募闽南语听校志愿者" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#submit">修复组招募3名闽南语台词听校志愿者，截止11月15日</a></h3>
+              <div class="news-meta">2026-11-03 · 艳谭档案</div>
+              <p class="news-summary">要求能辨识泉州腔与漳州腔差异，负责第10-12集对白入声字尾音核对。报名需提交一段30秒闽南语朗读样本，修复组在48小时内回复筛选结果。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-ep8/600/400" alt="康熙艳谭第8集庙会场景色彩校正前后对比" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#updates">第8集「庙会」色彩校正完成，色温从5600K调至5200K</a></h3>
+              <div class="news-meta">2026-11-02 · 艳谭档案</div>
+              <p class="news-summary">以庙会灯笼暖红色为白平衡参考，红色饱和度提升12。修复组保留约8%原始黄绿偏移，避免画面过于现代。校正前后色温与饱和度数值已录入参数表。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-kxyt-ep6/600/400" alt="康熙艳谭第6集暗部细节增强DaVinci节点图" width="600" height="400" loading="lazy">
+            <div class="news-body">
+              <h3><a href="#deep-dive">第6集暗部细节增强参数公开，阴影提亮+8 IRE</a></h3>
+              <div class="news-meta">2026-10-30 · 艳谭档案</div>
+              <p class="news-summary">阴影提亮曲线使用S型节点，暗部0-15 IRE区间增益+8，避免高光溢出。修复组公开的节点图包含7个调色节点，其中2个用于阴影区控制。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section-block" id="related">
+        <div class="section-header">
+          <h2>相关推荐</h2>
+        </div>
+        <div class="tag-cloud">
+          <a href="#featured">第7集颗粒保留版</a>
+          <a href="#featured">第9集夜景降噪</a>
+          <a href="#updates">第1集V2天空修正</a>
+          <a href="#updates">第2集音画同步校准</a>
+          <a href="#deep-dive">Real-ESRGAN 4倍超分</a>
+          <a href="#guide">闽南语入声保留</a>
+          <a href="#credibility">修复参数表追溯</a>
+          <a href="#comments">第3集龙袍金线</a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：可信度分层 -->
+      <section class="section-block" id="credibility">
+        <div class="section-header">
+          <h2>修复版本可信度分层</h2>
+        </div>
+        <table class="credibility-table">
+          <thead>
+            <tr><th>信息层级</th><th>具体来源</th><th>可核对内容</th><th>可信度</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>已公开事实</td>
+              <td>修复组参数表、对比帧</td>
+              <td>PSNR/SSIM数值、颗粒密度、色相偏移量</td>
+              <td><span class="badge-high">高</span></td>
+            </tr>
+            <tr>
+              <td>当事人回应</td>
+              <td>修复组投票帖、招募公告</td>
+              <td>第7集磨皮投票数据、听校志愿者要求</td>
+              <td><span class="badge-high">高</span></td>
+            </tr>
+            <tr>
+              <td>媒体转述</td>
+              <td>「修复组观察员」评论、影迷社群转发</td>
+              <td>第9-11集字幕修正处数、第1集V2上线时间</td>
+              <td><span class="badge-mid">中</span></td>
+            </tr>
+            <tr>
+              <td>网友推测</td>
+              <td>评论区「路过打酱油」等</td>
+              <td>修复组是否收费、未公开的后续集数计划</td>
+              <td><span class="badge-low">低</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 12. 投稿互动 -->
+      <section class="section-block" id="submit">
+        <div class="submit-section">
+          <h2>投稿与互动</h2>
+          <p>如果你手上有《康熙艳谭》原版VHS录像带、1996年发行版封底台词扫描件，或能辨识泉州腔与漳州腔差异，欢迎投递素材或报名听校志愿者。</p>
+          <form class="submit-form" onsubmit="event.preventDefault();alert('感谢投稿，修复组会在48小时内通过邮箱联系。');">
+            <input type="text" placeholder="你的昵称或邮箱" aria-label="昵称或邮箱" required>
+            <input type="text" placeholder="素材类型 / 报名方向" aria-label="素材类型或报名方向" required>
+            <button type="submit">提交</button>
+          </form>
+          <p class="submit-hint">修复组每周三集中处理投稿，听校志愿者报名截止日期为11月15日。</p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="aside-col" aria-label="辅助栏">
+      <!-- 热榜 -->
+      <div class="aside-panel">
+        <h2>修复热度榜</h2>
+        <ol class="hot-list">
+          <li>
+            <span class="hot-rank">1</span>
+            <div>
+              <div class="hot-title">第12集「艳谭终章」4K修复版</div>
+              <div class="hot-info">上线11-08 · 评分9.1</div>
+            </div>
+          </li>
+          <li>
+            <span class="hot-rank">2</span>
+            <div>
+              <div class="hot-title">第7集沐浴场景颗粒保留版</div>
+              <div class="hot-info">投票1,842票 · 62%支持</div>
+            </div>
+          </li>
+          <li>
+            <span class="hot-rank">3</span>
+            <div>
+              <div class="hot-title">第9集夜审4K夜景降噪</div>
+              <div class="hot-info">PSNR 34.1dB · 对比36组</div>
+            </div>
+          </li>
+          <li>
+            <span class="hot-rank">4</span>
+            <div>
+              <div class="hot-title">第1集V2天空过曝修正</div>
+              <div class="hot-info">颗粒密度85/cm²</div>
+            </div>
+          </li>
+          <li>
+            <span class="hot-rank">5</span>
+            <div>
+              <div class="hot-title">第11集闽南语入声保留</div>
+              <div class="hot-info">尾音保留率88%</div>
+            </div>
+          </li>
+          <li>
+            <span class="hot-rank">6</span>
+            <div>
+              <div class="hot-title">第3集龙袍金线纹理对比</div>
+              <div class="hot-info">4K可辨金线走向</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- 修复时间线 -->
+      <div class="aside-panel">
+        <h2>修复时间线</h2>
+        <div class="aside-timeline">
+          <div class="timeline-item">
+            <div class="tl-date">2026-11-08</div>
+            <div class="tl-text">第12集4K修复版上线</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">2026-11-06</div>
+            <div class="tl-text">第9-11集字幕校对稿发布</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">2026-11-05</div>
+            <div class="tl-text">第7集磨皮投票结果公布</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">2026-10-30</div>
+            <div class="tl-text">第6集暗部增强参数公开</div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-date">2026-10-25</div>
+            <div class="tl-text">第3集服饰纹理对比图发布</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 快捷入口 -->
+      <div class="aside-panel">
+        <h2>快捷入口</h2>
+        <div class="aside-links">
+          <a href="#deep-dive">→ 画质三层评判标准</a>
+          <a href="#guide">→ 修复版观看顺序</a>
+          <a href="#credibility">→ 可信度分层表</a>
+          <a href="#submit">→ 投稿与听校报名</a>
+          <a href="#faq">→ 第7集两个版本区别</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="2" y="2" width="36" height="36" rx="8" fill="#c49a6c"/>
+          <path d="M12 14h16v3H12zM12 20h10v3H12zM12 26h13v2H12z" fill="#5c3a17"/>
+          <circle cx="28" cy="27" r="4" fill="#f5e6d3"/>
+        </svg>
+        <span>三级电视剧AI修复版康熙艳谭全集</span>
+      </div>
+      <p class="footer-desc">覆盖《康熙艳谭》全12集修复档案，时间跨度从2026年10月18日第1集V2版上线至11月8日第12集4K版发布。条目类型包含4K修复、字幕校对、音轨降噪、画质对比与投票决策记录。修复组每周三、周六更新参数表与对比帧。</p>
+    </div>
+    <div class="footer-col">
+      <h3>修复版本</h3>
+      <ul>
+        <li><a href="#featured">第1-4集 1080p</a></li>
+        <li><a href="#featured">第5-8集 1080p</a></li>
+        <li><a href="#featured">第9-12集 4K</a></li>
+        <li><a href="#updates">最新进度</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>技术档案</h3>
+      <ul>
+        <li><a href="#deep-dive">颗粒保留边界</a></li>
+        <li><a href="#deep-dive">肤色还原争议</a></li>
+        <li><a href="#deep-dive">三层评判标准</a></li>
+        <li><a href="#credibility">可信度分层</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>参与互动</h3>
+      <ul>
+        <li><a href="#submit">素材投稿</a></li>
+        <li><a href="#submit">听校志愿者</a></li>
+        <li><a href="#comments">观众评论</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>页面内容为修复档案示例条目，参数表与对比帧数据来自「艳谭档案」公开记录。</span>
+    <span>最近更新：2026-11-08 第12集4K修复版上线</span>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="back-to-top" id="backToTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 搜索筛选
+  var searchInput=document.getElementById('searchInput');
+  var searchBtn=document.getElementById('searchBtn');
+  var featuredGrid=document.getElementById('featuredGrid');
+  var noResult=document.getElementById('noResult');
+  var cards=featuredGrid?featuredGrid.querySelectorAll('.content-card'):[];
+
+  function doSearch(){
+    var q=searchInput.value.trim().toLowerCase();
+    var found=0;
+    cards.forEach(function(card){
+      var text=card.textContent.toLowerCase();
+      if(!q||text.indexOf(q)>-1){
+        card.style.display='';
+        found++;
+      }else{
+        card.style.display='none';
+      }
+    });
+    if(noResult){
+      noResult.classList.toggle('show',found===0&&q!=='');
+    }
+  }
+  if(searchBtn){searchBtn.addEventListener('click',doSearch);}
+  if(searchInput){searchInput.addEventListener('keyup',function(e){if(e.key==='Enter')doSearch();});}
+
+  // 移动端抽屉
+  var hamburger=document.getElementById('hamburgerBtn');
+  var drawer=document.getElementById('mobileDrawer');
+  var overlay=document.getElementById('drawerOverlay');
+  var closeBtn=document.getElementById('drawerClose');
+
+  function openDrawer(){
+    drawer.classList.add('open');
+    overlay.classList.add('show');
+    hamburger.setAttribute('aria-expanded','true');
+    document.body.style.overflow='hidden';
+  }
+  function closeDrawer(){
+    drawer.classList.remove('open');
+    overlay.classList.remove('show');
+    hamburger.setAttribute('aria-expanded','false');
+    document.body.style.overflow='';
+  }
+  if(hamburger){hamburger.addEventListener('click',openDrawer);}
+  if(closeBtn){closeBtn.addEventListener('click',closeDrawer);}
+  if(overlay){overlay.addEventListener('click',closeDrawer);}
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'&&drawer.classList.contains('open')){closeDrawer();}
+  });
+  // 点击抽屉导航后收起
+  if(drawer){
+    drawer.querySelectorAll('nav a').forEach(function(a){
+      a.addEventListener('click',closeDrawer);
+    });
+  }
+
+  // 回到顶部
+  var backToTop=document.getElementById('backToTop');
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>window.innerHeight){
+      backToTop.classList.add('show');
+    }else{
+      backToTop.classList.remove('show');
+    }
+  });
+  if(backToTop){
+    backToTop.addEventListener('click',function(){
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  }
+
+  // 侧栏导航高亮
+  var navLinks=document.querySelectorAll('.main-nav a, .channel-sidebar a');
+  var sections=[];
+  document.querySelectorAll('main section[id]').forEach(function(sec){
+    sections.push(sec);
+  });
+  function highlightNav(){
+    var scrollY=window.scrollY+120;
+    var currentId='';
+    sections.forEach(function(sec){
+      if(sec.offsetTop<=scrollY){currentId=sec.id;}
+    });
+    navLinks.forEach(function(link){
+      var href=link.getAttribute('href');
+      if(href==='#'+currentId){
+        link.classList.add('active');
+      }else{
+        link.classList.remove('active');
+      }
+    });
+  }
+  window.addEventListener('scroll',highlightNav);
+  highlightNav();
+})();
+</script>
+
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"三级电视剧AI修复版康熙艳谭全集",
+  "description":"汇聚《康熙艳谭》系列三级电视剧的AI修复版本：第1至12集4K修复对比、繁体中文字幕校对、闽南语原声轨修复进度，以及修复组公开的画质评判标准与版本差异记录。",
+  "inLanguage":"zh-CN",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"/#searchInput",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"第7集沐浴场景为什么有两个修复版本？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"修复组最初发布的是自动白平衡版，肤色偏粉且做了3px磨皮，被观众批评「塑料感」。10月21日发起投票后，62%选择保留原始颗粒，修复组据此推出投票后最终版，肤色色相偏移从+2调整为+9，磨皮半径归零。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"4K修复版和1080p版的画质差距具体在哪里？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"差距集中在暗部细节和纹理可辨度。第9集牢房夜审场景，4K版PSNR 34.1dB，1080p版28.4dB；4K版暗部墙面砖缝可辨。第3集龙袍刺绣在4K下能看清金线走向，1080p仅能看出色块。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"闽南语原声轨的入声字尾音修复到什么程度？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"第11集采用分频段处理，500Hz-4kHz区间仅做窄带滤波，入声字尾音能量保留率约88%。分离算法直接处理会损失约40%的入声能量。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"修复组公开的PSNR和SSIM指标怎么解读？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"PSNR不低于28dB、SSIM不低于0.85是修复组设定的客观达标线。第9集PSNR 34.1dB、SSIM 0.91。PSNR在颗粒回叠后会略降，第1集V2因颗粒回叠PSNR从31.2dB降至29.8dB，主观评分反而从6.1升至7.9。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"第2集音轨的120ms偏移是怎么校准的？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"原版VHS音轨存在约120ms音画不同步，修复组以场记板合板帧为基准，将偏移拆分为磁带起始段和录制段两部分分别对齐。校准后同步误差控制在±16ms内，共标注了23个同步参考帧。"
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"为什么第8集要做色彩校正？",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"第8集「庙会」原版VHS整体偏黄绿，修复组以庙会灯笼的暖红色作为白平衡参考，将色温从5600K调整为5200K，红色饱和度提升12。修复组保留了约8%的原始黄绿偏移。"
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+            </html>
